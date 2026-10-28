@@ -1,0 +1,35 @@
+[project]
+name = "triadmodel"
+version = "0.1.0"
+description = "Integrated three-statement forecasting engine"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["backend"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "S", "C90"]
+
+[tool.ruff.lint.per-file-ignores]
+"backend/tests/**" = ["S101"]
+
+[tool.mypy]
+strict = true
+python_version = "3.12"
+mypy_path = "backend"
+packages = ["app"]
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["backend"]
+addopts = "-ra --strict-markers"
+
+[tool.coverage.run]
+source = ["backend/app"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
