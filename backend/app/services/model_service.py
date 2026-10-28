@@ -7,9 +7,9 @@ from datetime import datetime
 
 from sqlalchemy.orm import Session
 
-from app.api.errors import ApiError
 from app.db import repository
 from app.db.models import SavedModel
+from app.errors import ApiError
 from app.schemas.model import ModelPayload
 
 CURRENT_SCHEMA_VERSION = 1

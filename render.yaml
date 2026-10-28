@@ -1,0 +1,27 @@
+# Render Blueprint: one Docker web service plus one Postgres database.
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: triadmodel
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health/ready
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: triadmodel-db
+          property: connectionString
+      - key: APP_ENV
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+
+databases:
+  - name: triadmodel-db
+    databaseName: triadmodel
+    user: triadmodel
+    # WARNING: free Render Postgres expires 30 days after creation (14-day grace period, then the
+    # data is deleted) and has no backups. Saved models would be lost. For anything you want to
+    # keep, change this to a paid plan such as 0.1c-256mb. See docs/DEPLOYMENT.md.
+    plan: free

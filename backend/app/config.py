@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     max_request_bytes: int = Field(default=1_048_576, gt=0)
     cors_allowed_origins: list[str] = Field(default_factory=list)
     rate_limit_per_minute: int = Field(default=60, gt=0)
+    static_dir: str = "frontend/dist"  # compiled frontend; served only if it exists
 
     @field_validator("database_url")
     @classmethod

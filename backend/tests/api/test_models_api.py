@@ -174,7 +174,9 @@ def test_csv_export_neutralises_formula_in_company_name(
 
 
 def test_rate_limit_returns_429_with_retry_after(demo_json: dict[str, Any]) -> None:
-    app = create_app(Settings(database_url="sqlite://", rate_limit_per_minute=3))
+    app = create_app(
+        Settings(database_url="sqlite://", rate_limit_per_minute=3, static_dir="no-such-dir")
+    )
     Base.metadata.create_all(app.state.db_engine)
     with TestClient(app) as limited:
         statuses = [limited.post("/api/calculate", json=demo_json).status_code for _ in range(5)]

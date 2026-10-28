@@ -1,6 +1,6 @@
 # TriadModel — Architecture
 
-> Status: design baseline, revision 2 (backend added). Nothing here is claimed as working until the checklist in [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) marks it verified. Requirement IDs (F*, N*, B*) refer to that file.
+> Status: revision 3. Describes the implemented system; what is verified and what is not is tracked in [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md). Decisions are recorded in [docs/DECISIONS/](docs/DECISIONS/). Requirement IDs (F*, N*, B*) refer to that file.
 
 ## 1. Purpose and boundaries
 
@@ -26,7 +26,7 @@ A **single deployable modular monolith**: one FastAPI service that exposes a JSO
 - **Why a small explicit dependency graph:** each forecast line declares its inputs. One mechanism yields calculation order, cycle detection (F13) and the trace view (F14). It is deliberately minimal, not a spreadsheet engine.
 - **Why Python:** `Decimal` gives exact currency arithmetic; strong typing with pydantic v2 + mypy; first-class testing; natural fit for finance tooling.
 
-Not used: microservices, queues, caches, GraphQL, ORMs beyond SQLAlchemy, accounts/OAuth (see §9).
+Not used: microservices, queues, caches, GraphQL, accounts/OAuth (see §9).
 
 ## 3. Technology choices
 
@@ -36,9 +36,9 @@ Not used: microservices, queues, caches, GraphQL, ORMs beyond SQLAlchemy, accoun
 | Validation/schemas | Pydantic v2 | Request/response contracts and engine input types |
 | Persistence | SQLAlchemy 2 + Alembic; Postgres (prod), SQLite (local/unit tests) | Migrations required; Postgres available on Render. Integration tests also run against real Postgres in CI |
 | Frontend | React + TypeScript + Vite, built to static files | Instant, reactive assumption editing |
-| Backend tests | pytest, httpx TestClient, pytest-cov, Hypothesis (property tests) | Standard; Hypothesis suits "BS balances for all valid inputs" |
+| Backend tests | pytest, Starlette TestClient (via httpx), pytest-cov, Hypothesis (property tests) | Standard; Hypothesis suits "BS balances for all valid inputs" |
 | Frontend tests | Vitest + Testing Library; Playwright (+axe) for E2E | |
-| Quality | Ruff (lint+format), mypy --strict, ESLint, Prettier, pip-audit, npm audit | |
+| Quality | Ruff (lint+format), mypy --strict, oxlint (the Vite template's linter), Prettier, pip-audit, npm audit | |
 | Packaging/deploy | Multi-stage Dockerfile → Render (Docker runtime) | Node builds the UI, Python runs the app; identical locally and on Render |
 | CI | GitHub Actions | Repo is on GitHub |
 
@@ -68,7 +68,7 @@ flowchart TB
   Routes -->|/api/calculate| Engine
 ```
 
-**Dependency rule:** `engine` imports only the standard library (and its own types). `services` may import `engine` and `db`. `api` imports `services` and `schemas`. Nothing imports `api`. Checked in CI with an import-linter-style test.
+**Dependency rule:** `engine` imports only the standard library (and its own types). `services` may import `engine` and `db`. `api` imports `services` and `schemas`. Nothing but `main` imports `api`. Enforced by `backend/tests/unit/test_architecture.py` (engine stdlib-only and isolated; services, db and schemas never import `api`). Errors that services raise live in `app/errors.py` for this reason.
 
 ### Responsibilities
 
@@ -248,31 +248,32 @@ flowchart LR
 - Rollback: redeploy the previous Render deploy/commit; migrations are written backward-compatible for one release so a code rollback does not require a DB rollback.
 - **Manual steps for the owner** (cannot be done by me): create the GitHub repo and push; connect it to Render and apply the Blueprint; confirm the plan. Deployment is "done" only after the live URL passes the smoke test.
 
-## 16. Proposed repository structure
+## 16. Repository structure
 
 ```
 TriadModel/
-├── architecture.md  README.md  CONTRIBUTING.md  CHANGELOG.md  SECURITY.md
+├── architecture.md  README.md  CONTRIBUTING.md  CHANGELOG.md  SECURITY.md  LICENSE
 ├── .env.example  .gitignore  .dockerignore  Dockerfile  render.yaml
-├── .github/workflows/ci.yml
-├── pyproject.toml            # ruff, mypy, pytest, coverage config
-├── requirements.txt  requirements-dev.txt
-├── alembic.ini
+├── .github/ workflows/ci.yml  dependabot.yml
+├── pyproject.toml  requirements.txt  requirements-dev.txt  alembic.ini
 ├── docs/  REQUIREMENTS.md SETUP.md API.md TESTING.md DEPLOYMENT.md  DECISIONS/ADR-00x-*.md
 ├── backend/
 │   ├── app/
-│   │   ├── main.py            # app factory, middleware, static mount
-│   │   ├── config.py  logging.py
-│   │   ├── api/               # routers: health, calculate, models; errors.py
-│   │   ├── schemas/           # pydantic contracts
-│   │   ├── services/          # model_service.py
-│   │   ├── db/                # models.py, session.py, repository.py
-│   │   ├── data/demo.py       # demo company (labelled)
-│   │   └── engine/            # pure core (types, graph, forecast/, statements, checks, scenarios, calculate)
-│   ├── migrations/            # alembic
-│   └── tests/ unit/ property/ integration/ api/ fixtures/
-├── frontend/                  # Vite + React + TS (src/, tests/, e2e/)
-└── scripts/smoke_test.py
+│   │   ├── main.py  config.py
+│   │   ├── api/         # routers (health, calculate, models), errors, middleware, static
+│   │   ├── schemas/     # pydantic request (model.py) and response (result.py) contracts
+│   │   ├── services/    # calculation, demo, model_service, export
+│   │   ├── db/          # models.py, session.py, repository.py
+│   │   ├── data/demo.py # demo company (labelled illustrative)
+│   │   └── engine/      # pure core: types, constants, graph, calculate, statements, checks,
+│   │                    #   scenarios, forecast/{operating,working_capital,financing}.py
+│   ├── migrations/      # alembic env + versions/0001_create_models_table.py
+│   └── tests/           # unit/ property/ api/ integration/ fixtures/
+├── frontend/
+│   ├── src/ api/ (typed client) lib/ (numbers, statements, tokens) state/useModel.ts components/ test/
+│   ├── e2e/             # Playwright journeys
+│   └── playwright.config.ts  vite.config.ts  package.json
+└── scripts/             # smoke_test.py, export_frontend_fixtures.py
 ```
 
 ## 17. Key decisions and trade-offs
