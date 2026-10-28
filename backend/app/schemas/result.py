@@ -19,11 +19,11 @@ from app.engine.types import (
 OUTPUT_QUANTUM = Decimal("0.0001")
 
 
-def _round(value: Decimal) -> str:
+def format_money(value: Decimal) -> str:
     return str(value.quantize(OUTPUT_QUANTUM, rounding=ROUND_HALF_EVEN))
 
 
-Money = Annotated[Decimal, PlainSerializer(_round, return_type=str, when_used="json")]
+Money = Annotated[Decimal, PlainSerializer(format_money, return_type=str, when_used="json")]
 
 
 class FromEngine(BaseModel):
@@ -154,3 +154,16 @@ def scenario_result_out(result: ModelResult, include_trace: bool) -> ScenarioRes
         flags=[FlagOut.from_engine(f) for f in flags],
         trace=trace,
     )
+
+
+class SavedModelOut(BaseModel):
+    id: str
+    version: int
+    created_at: str
+    updated_at: str
+    model: Any  # a ModelPayload, serialised by the router
+    result: CalculationOut
+
+
+class CreatedModelOut(SavedModelOut):
+    write_token: str

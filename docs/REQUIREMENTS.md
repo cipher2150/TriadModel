@@ -16,7 +16,7 @@ Users: finance students, analysts and small-business owners who have 2–5 years
 
 | ID | Requirement | Status |
 |----|-------------|--------|
-| F1 | Canonical historical schema for IS, BS, CF with import validation (reject unbalanced BS, missing lines, non-finite numbers, with line-specific errors) | [ ] |
+| F1 | Canonical historical schema for IS, BS, CF with import validation (reject unbalanced BS, missing lines, non-finite numbers, with line-specific errors) | [~] JSON import validation via API schemas verified; CSV import not implemented |
 | F2 | Revenue forecast (growth rate per year) | [x] engine only — engine tests: hand-calculated year 1 |
 | F3 | Operating expense forecast (COGS % revenue, SG&A % revenue, D&A from PP&E) | [x] engine only — same |
 | F4 | Working capital forecast (DSO, DIO, DPO → AR, inventory, AP; other items held or % revenue) | [x] engine only — same |
@@ -25,16 +25,16 @@ Users: finance students, analysts and small-business owners who have 2–5 years
 | F7 | Tax expense (rate on positive pre-tax income; losses are not carried forward in MVP — documented limitation) | [x] engine only — unit: loss year pays no tax |
 | F8 | Equity roll-forward (retained earnings, dividends as payout ratio) | [x] engine only — unit: RE roll-forward |
 | F9 | Cash flow statement derived from IS and BS movements (indirect method) and tied to BS cash | [x] engine only — unit + property: CF ties to ledger cash |
-| F10 | Three scenarios (Base, Upside, Downside), each a complete assumption set; switching or editing recalculates all statements | [ ] |
+| F10 | Three scenarios (Base, Upside, Downside), each a complete assumption set; switching or editing recalculates all statements | [~] backend only — scenarios calculate together via API; UI pending |
 | F11 | Integrity checks: balance sheet balances; CF ending cash = BS cash; NI IS = NI CF; RE, PP&E and debt roll-forwards tie out; each reported per period with tolerance | [x] engine only — fault-injection tests per flag + property tests |
 | F12 | Liquidity flags: cash below minimum, revolver limit exceeded (unfunded shortfall), negative equity | [x] engine only — unit: shortfall/negative cash/negative equity |
 | F13 | Dependency graph: each forecast line declares its inputs; calculation order is derived, cycles are detected and reported | [x] engine only — graph tests: order, cycle, undefined/duplicate |
 | F14 | Trace view: for any forecast cell, show the formula and the inputs it used | [x] engine only — trace unit test (API/UI view pending) |
 | F15 | Scenario comparison view (key outputs across scenarios) | [ ] |
-| F16 | Export/import model as JSON; export statements as CSV | [ ] |
-| B1 | REST API: stateless `/api/calculate`; create/read/update/delete saved models; health endpoints; consistent error envelope | [ ] |
-| B2 | Saved models persisted in Postgres with migrations; optimistic concurrency (409 on stale version) | [ ] |
-| B3 | Capability-token access: model UUID = read, write token = write/delete; no list endpoint | [ ] |
+| F16 | Export/import model as JSON; export statements as CSV | [~] JSON/CSV export and JSON re-import verified via API; no UI yet |
+| B1 | REST API: stateless `/api/calculate`; create/read/update/delete saved models; health endpoints; consistent error envelope | [x] API tests (calculate, demo, models CRUD, export, error envelope) |
+| B2 | Saved models persisted in Postgres with migrations; optimistic concurrency (409 on stale version) | [x] Alembic migration tested up/down on SQLite and Postgres; 8-thread race test on Postgres 14 |
+| B3 | Capability-token access: model UUID = read, write token = write/delete; no list endpoint | [x] token/403/404/no-list tests |
 
 ## Non-functional requirements
 
@@ -44,7 +44,7 @@ Users: finance students, analysts and small-business owners who have 2–5 years
 | N2 | Engine is pure Python (stdlib only), `Decimal`-based, deterministic; import-boundary test enforces it | [x] test_architecture.py |
 | N3 | All imported/edited input validated at the boundary; clear messages | [ ] |
 | N4 | Accessible UI (labelled inputs, keyboard operable, flags not colour-only); axe checks in E2E | [ ] |
-| N5 | No secrets in repo; config via validated env vars; security headers, request-size cap, rate limiting; tokens never logged | [ ] |
+| N5 | No secrets in repo; config via validated env vars; security headers, request-size cap, rate limiting; tokens never logged | [~] headers, size cap, rate limit, no token in logs/responses verified; secret scan not yet configured |
 | N6 | Reproducible setup from a clean checkout; CI runs format, lint, typecheck, tests, build | [ ] |
 | N7 | Dockerised app deployed on Render (service + Postgres) and smoke-tested | [ ] |
 

@@ -4,12 +4,15 @@ import pytest
 from fastapi.testclient import TestClient
 
 from app.config import Settings
+from app.db.models import Base
 from app.main import create_app
 
 
 @pytest.fixture
 def client() -> Iterator[TestClient]:
-    with TestClient(create_app(Settings(database_url="sqlite://", max_request_bytes=200_000))) as c:
+    app = create_app(Settings(database_url="sqlite://", max_request_bytes=200_000))
+    Base.metadata.create_all(app.state.db_engine)
+    with TestClient(app) as c:
         yield c
 
 

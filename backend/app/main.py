@@ -4,11 +4,15 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
-from app.api import calculate, health
+from app.api import calculate, health, models
 from app.api.errors import register_error_handlers
-from app.api.middleware import BodySizeLimitMiddleware, SecurityHeadersMiddleware
+from app.api.middleware import (
+    BodySizeLimitMiddleware,
+    RateLimitMiddleware,
+    SecurityHeadersMiddleware,
+)
 from app.config import Settings, get_settings
-from app.db.session import build_engine
+from app.db.session import build_engine, build_session_factory
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:
@@ -34,10 +38,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     register_error_handlers(app)
     app.add_middleware(SecurityHeadersMiddleware, hsts=production)
     app.add_middleware(BodySizeLimitMiddleware, max_bytes=settings.max_request_bytes)
+    app.add_middleware(RateLimitMiddleware, per_minute=settings.rate_limit_per_minute)
     app.state.settings = settings
     app.state.db_engine = db_engine
+    app.state.session_factory = build_session_factory(db_engine)
     app.include_router(health.router)
     app.include_router(calculate.router)
+    app.include_router(models.router)
     return app
 
 
