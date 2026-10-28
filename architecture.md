@@ -72,7 +72,7 @@ flowchart TB
 
 ### Responsibilities
 
-- **engine/** — `types` (line items, assumptions, result, flags), `graph` (nodes keyed `line@period`, topological evaluation, `CycleError`), `forecast/` (revenue, opex, working_capital, ppe, debt, tax, equity), `statements` (assemble IS/BS/CF), `checks` (integrity and liquidity flags), `scenarios` (scenario resolution), `calculate` (entry point).
+- **engine/** — `types` (line items, assumptions, result, flags), `graph` (nodes keyed `line@period`, topological evaluation, `CycleError`), `forecast/` (`operating` revenue/costs/PP&E/tax/net income, `working_capital`, `financing` interest/debt/revolver/cash/dividends/equity), `statements` (assemble IS/BS/CF), `checks` (integrity and liquidity flags), `scenarios` (scenario resolution), `calculate` (entry point).
 - **schemas/** — API contracts; the *only* place untrusted input becomes typed objects. Historical balance sheets must balance; percentages bounded; years contiguous.
 - **services/** — orchestrates: validate → persist → calculate. Contains no HTTP and no SQL.
 - **db/** — SQLAlchemy models, session handling, repository functions; Alembic migrations in `backend/migrations`.
