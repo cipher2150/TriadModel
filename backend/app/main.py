@@ -4,7 +4,9 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
-from app.api import health
+from app.api import calculate, health
+from app.api.errors import register_error_handlers
+from app.api.middleware import BodySizeLimitMiddleware, SecurityHeadersMiddleware
 from app.config import Settings, get_settings
 from app.db.session import build_engine
 
@@ -20,10 +22,22 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         yield
         db_engine.dispose()
 
-    app = FastAPI(title="TriadModel", version="0.1.0", lifespan=lifespan)
+    production = settings.app_env == "production"
+    app = FastAPI(
+        title="TriadModel",
+        version="0.1.0",
+        lifespan=lifespan,
+        docs_url=None if production else "/docs",
+        redoc_url=None,
+        openapi_url=None if production else "/openapi.json",
+    )
+    register_error_handlers(app)
+    app.add_middleware(SecurityHeadersMiddleware, hsts=production)
+    app.add_middleware(BodySizeLimitMiddleware, max_bytes=settings.max_request_bytes)
     app.state.settings = settings
     app.state.db_engine = db_engine
     app.include_router(health.router)
+    app.include_router(calculate.router)
     return app
 
 
