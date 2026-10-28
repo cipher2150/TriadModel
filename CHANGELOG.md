@@ -4,6 +4,9 @@ Format based on [Keep a Changelog](https://keepachangelog.com/). Versions are no
 
 ## [Unreleased]
 
+### Changed
+- Vitest and `@vitest/coverage-v8` upgraded to 5.0.5 together; Dependabot now groups them because they declare peer dependencies on each other.
+
 ### Added
 - Calculation engine: `Decimal`-based, dependency graph with cycle detection, forecast modules (revenue, costs, PP&E, working capital, tax, term loan, revolver, dividends, equity), statements assembled without plugs, integrity and liquidity checks.
 - Base / Upside / Downside scenarios derived from documented deltas.

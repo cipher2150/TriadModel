@@ -73,3 +73,4 @@ alembic upgrade head
 | `localStorage.clear is not a function` in frontend tests | Node ≥ 25 global `localStorage`; handled in `frontend/src/test/setup.ts` |
 | Playwright cannot find a browser | `cd frontend && npx playwright install chromium` |
 | `docker: Cannot connect to the Docker daemon` | Start Docker Desktop |
+| `CERTIFICATE_VERIFY_FAILED` from `scripts/smoke_test.py` against an `https://` URL | The python.org macOS installer ships no CA certificates. Run `/Applications/Python 3.*/Install Certificates.command`, or run the script with a Python that has system certificates (e.g. Homebrew) |

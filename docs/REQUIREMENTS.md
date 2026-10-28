@@ -45,7 +45,7 @@ Users: finance students, analysts and small-business owners who have 2–5 years
 | N3 | All imported/edited input validated at the boundary; clear messages | [x] schema, API and E2E tests: bad types, ranges, unknown fields, NaN, oversize, malformed JSON |
 | N4 | Accessible UI (labelled inputs, keyboard operable, flags not colour-only); axe checks in E2E | [~] axe scan (serious/critical) passes in E2E; labelled inputs, flags carry text; no manual screen-reader or keyboard audit |
 | N5 | No secrets in repo; config via validated env vars; security headers, request-size cap, rate limiting; tokens never logged | [~] headers, size cap, rate limit, hashed tokens, non-root container verified; no CI secret scanning (enable GitHub secret scanning) |
-| N6 | Reproducible setup from a clean checkout; CI runs format, lint, typecheck, tests, build | [~] reproduced from a clean export (install, build, migrate, run, all checks). CI workflow written and YAML-validated but not yet run on GitHub |
+| N6 | Reproducible setup from a clean checkout; CI runs format, lint, typecheck, tests, build | [x] reproduced from a clean export; CI run on `main` after the merge passed all 5 jobs (frontend, backend on Python 3.12 and 3.13 with Postgres, E2E, Docker smoke test) |
 | N7 | Dockerised app deployed on Render (service + Postgres) and smoke-tested | [!] image built and smoke-tested locally against Postgres 16; not deployed to Render (needs owner's Render account; see docs/DEPLOYMENT.md) |
 
 ## Assumptions (nonessential ambiguities, resolved conservatively)
