@@ -138,19 +138,17 @@ For "what-if" edits that should not be saved, `POST /api/calculate` is stateless
 
 ## 7. Database
 
-Intentionally small. One aggregate: a saved model, stored as validated JSON documents (historicals and per-scenario assumptions are always read and written together; there is no cross-model querying, so normalising into many tables would add cost without benefit).
+Intentionally small. One aggregate: a saved model, stored as one validated JSON document (`payload`: company name, historicals, all scenarios, tolerance) (historicals and per-scenario assumptions are always read and written together; there is no cross-model querying, so normalising into many tables would add cost without benefit).
 
 ```mermaid
 erDiagram
-  MODEL {
+  MODELS {
     uuid id PK
     string name
+    bool is_demo
     string write_token_hash
     int schema_version
-    json historicals
-    json scenarios
-    json settings
-    bool is_demo
+    jsonb payload
     int version
     timestamptz created_at
     timestamptz updated_at
@@ -158,7 +156,7 @@ erDiagram
 ```
 
 - `id`: UUIDv4 (unguessable); `write_token_hash`: SHA-256 of a random token returned once at creation; constant-time comparison on write.
-- `version`: optimistic concurrency. Updates send `If-Match`/`version`; a stale version → HTTP 409.
+- `version`: optimistic concurrency. `PUT` bodies carry the `version` they were based on; the update is a single atomic `UPDATE ... WHERE version = :expected`, and zero rows updated → HTTP 409.
 - Indexes: primary key only; no list endpoint exists (see §9), so no further index is justified.
 - Constraints: NOT NULL on all columns, `version >= 1`, `schema_version` checked in application and by migration.
 - Alembic migrations are the only way schema changes; CI runs `alembic upgrade head` on empty Postgres and a downgrade/upgrade round trip.
@@ -171,7 +169,7 @@ erDiagram
 | `POST /api/calculate` | Stateless calculation of a posted model |
 | `POST /api/models` | Create saved model → `{id, write_token, model}` |
 | `GET /api/models/{id}` | Fetch model + calculated result |
-| `PUT /api/models/{id}` | Update (requires `X-Write-Token`, `version`); returns new result |
+| `PUT /api/models/{id}` | Body `{version, model}`; requires `X-Write-Token`; returns new result |
 | `DELETE /api/models/{id}` | Delete (requires token) |
 | `GET /api/models/{id}/export?format=json\|csv` | Export |
 | `GET /api/demo` | Demo company input (labelled `is_demo: true`) |
@@ -183,7 +181,7 @@ Errors use one envelope: `{"error": {"code": "...", "message": "...", "details":
 - **Authentication decision (assumption A6):** no user accounts in MVP. Access uses capability tokens: possession of the model UUID grants read (share link); possession of the write token grants write/delete. There is **no list/search endpoint**, so models cannot be enumerated. Trade-off: anyone with the link can read; losing the write token loses edit rights. Documented in SECURITY.md. Full accounts are a future option if the owner wants private multi-user workspaces.
 - Input validation by pydantic at every endpoint; request size cap (default 1 MB); bounded array lengths (≤ 15 periods).
 - SQL only via SQLAlchemy parameterised statements.
-- Rate limiting on write and calculate endpoints (in-process limiter, adequate for a single instance; documented as per-instance).
+- Rate limiting on POST/PUT/DELETE under `/api/` (in-process sliding window per client address; per-instance only). Behind Render's proxy the client address requires uvicorn `--proxy-headers`, to be set in the Docker command.
 - Security headers (CSP, `X-Content-Type-Options`, `Referrer-Policy`, HSTS in production), no wildcard CORS (same origin by design; allowlist configurable for local dev).
 - CSV export neutralises leading `= + - @` in text cells.
 - No secrets in the repo; `DATABASE_URL` and other settings from environment, validated at startup with an actionable error.

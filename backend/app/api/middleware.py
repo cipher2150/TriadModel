@@ -1,3 +1,8 @@
+import math
+import time
+from collections import deque
+from collections.abc import Callable
+
 from starlette.types import ASGIApp, Message, Receive, Scope, Send
 
 from app.api.errors import error_response
@@ -75,3 +80,58 @@ class SecurityHeadersMiddleware:
             await send(message)
 
         await self.app(scope, receive, send_with_headers)
+
+
+class RateLimitMiddleware:
+    """Per-client sliding-window limit on state-changing and calculation requests.
+
+    In-process, so the limit is per application instance; adequate for a single Render
+    service. The client key is the peer address (uvicorn --proxy-headers resolves it behind
+    Render's proxy).
+    """
+
+    LIMITED_METHODS = frozenset({"POST", "PUT", "DELETE"})
+    WINDOW_SECONDS = 60.0
+    MAX_TRACKED_CLIENTS = 10_000
+
+    def __init__(self, app: ASGIApp, per_minute: int, clock: Callable[[], float] = time.monotonic):
+        self.app = app
+        self.per_minute = per_minute
+        self.clock = clock
+        self.hits: dict[str, deque[float]] = {}
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
+        if (
+            scope["type"] != "http"
+            or scope["method"] not in self.LIMITED_METHODS
+            or not scope["path"].startswith("/api/")
+        ):
+            await self.app(scope, receive, send)
+            return
+
+        client = scope.get("client")
+        key = client[0] if client else "unknown"
+        retry_after = self._check(key)
+        if retry_after is not None:
+            response = error_response(429, "RATE_LIMITED", "Too many requests; slow down")
+            response.headers["retry-after"] = str(retry_after)
+            await response(scope, receive, send)
+            return
+        await self.app(scope, receive, send)
+
+    def _check(self, key: str) -> int | None:
+        now = self.clock()
+        if len(self.hits) > self.MAX_TRACKED_CLIENTS:
+            self._sweep(now)
+        window = self.hits.setdefault(key, deque())
+        while window and now - window[0] >= self.WINDOW_SECONDS:
+            window.popleft()
+        if len(window) >= self.per_minute:
+            return max(1, math.ceil(self.WINDOW_SECONDS - (now - window[0])))
+        window.append(now)
+        return None
+
+    def _sweep(self, now: float) -> None:
+        stale = [k for k, w in self.hits.items() if not w or now - w[-1] >= self.WINDOW_SECONDS]
+        for k in stale:
+            del self.hits[k]
