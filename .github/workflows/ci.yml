@@ -33,7 +33,7 @@ jobs:
       TEST_DATABASE_URL: postgresql+psycopg://triad:triad@127.0.0.1:5432/triad_test
       REQUIRE_POSTGRES: "1" # Postgres integration tests must run in CI, never skip
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
@@ -59,7 +59,7 @@ jobs:
       run:
         working-directory: frontend
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -80,7 +80,7 @@ jobs:
     needs: frontend
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
@@ -125,7 +125,7 @@ jobs:
           --health-cmd "pg_isready -U triad -d triad"
           --health-interval 5s --health-timeout 5s --health-retries 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: docker build -t triadmodel:ci .
       - name: Start the production image
         run: |
