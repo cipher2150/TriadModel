@@ -6,6 +6,11 @@ updates:
   - package-ecosystem: npm
     directory: /frontend
     schedule: { interval: weekly }
+    groups:
+      # vitest and its coverage provider declare peer dependencies on each other, so they must
+      # be bumped in one PR; separate PRs fail with an npm ERESOLVE error.
+      vitest:
+        patterns: ["vitest", "@vitest/*"]
   - package-ecosystem: github-actions
     directory: /
     schedule: { interval: weekly }
