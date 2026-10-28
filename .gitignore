@@ -14,3 +14,7 @@ frontend/dist/
 playwright-report/
 test-results/
 .DS_Store
+
+e2e.db
+frontend/e2e.db
+frontend/coverage/

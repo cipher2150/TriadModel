@@ -1,6 +1,7 @@
 import logging
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI
 
@@ -11,6 +12,7 @@ from app.api.middleware import (
     RateLimitMiddleware,
     SecurityHeadersMiddleware,
 )
+from app.api.static import mount_frontend
 from app.config import Settings, get_settings
 from app.db.session import build_engine, build_session_factory
 
@@ -45,6 +47,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.include_router(health.router)
     app.include_router(calculate.router)
     app.include_router(models.router)
+    if not mount_frontend(app, Path(settings.static_dir)):
+        logging.getLogger(__name__).info(
+            "No frontend build at %s; serving API only", settings.static_dir
+        )
     return app
 
 

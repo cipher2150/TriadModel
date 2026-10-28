@@ -1,0 +1,4465 @@
+{
+ "company_name": "Demo Co (illustrative data)",
+ "is_demo": true,
+ "historicals": [
+  {
+   "year": 2022,
+   "income_statement": {
+    "revenue": "2400.0000",
+    "cogs": "1440.0000",
+    "gross_profit": "960.0000",
+    "sga": "504.0000",
+    "depreciation": "90.0000",
+    "ebit": "366.0000",
+    "interest_expense": "20.0000",
+    "pre_tax_income": "346.0000",
+    "tax_expense": "86.0000",
+    "net_income": "260.0000"
+   },
+   "balance_sheet": {
+    "cash": "180.0000",
+    "accounts_receivable": "240.0000",
+    "inventory": "310.0000",
+    "other_current_assets": "30.0000",
+    "ppe_net": "900.0000",
+    "total_assets": "1660.0000",
+    "accounts_payable": "190.0000",
+    "other_current_liabilities": "60.0000",
+    "revolver": "0.0000",
+    "term_loan": "400.0000",
+    "total_liabilities": "650.0000",
+    "common_stock": "300.0000",
+    "retained_earnings": "710.0000",
+    "total_equity": "1010.0000"
+   },
+   "cash_flow": {
+    "beginning_cash": "33.0000",
+    "net_income": "260.0000",
+    "depreciation": "90.0000",
+    "change_in_receivables": "-10.0000",
+    "change_in_inventory": "-15.0000",
+    "change_in_other_current_assets": "0.0000",
+    "change_in_payables": "8.0000",
+    "change_in_other_current_liabilities": "2.0000",
+    "operating_cash_flow": "335.0000",
+    "capex": "-70.0000",
+    "investing_cash_flow": "-70.0000",
+    "revolver_net_borrowing": "0.0000",
+    "term_loan_repayment": "-40.0000",
+    "dividends": "-78.0000",
+    "financing_cash_flow": "-118.0000",
+    "net_change_in_cash": "147.0000",
+    "ending_cash": "180.0000"
+   }
+  },
+  {
+   "year": 2023,
+   "income_statement": {
+    "revenue": "2592.0000",
+    "cogs": "1555.0000",
+    "gross_profit": "1037.0000",
+    "sga": "544.0000",
+    "depreciation": "90.0000",
+    "ebit": "403.0000",
+    "interest_expense": "20.0000",
+    "pre_tax_income": "383.0000",
+    "tax_expense": "96.0000",
+    "net_income": "287.0000"
+   },
+   "balance_sheet": {
+    "cash": "253.0000",
+    "accounts_receivable": "259.0000",
+    "inventory": "234.0000",
+    "other_current_assets": "30.0000",
+    "ppe_net": "1017.0000",
+    "total_assets": "1793.0000",
+    "accounts_payable": "162.0000",
+    "other_current_liabilities": "60.0000",
+    "revolver": "0.0000",
+    "term_loan": "360.0000",
+    "total_liabilities": "582.0000",
+    "common_stock": "300.0000",
+    "retained_earnings": "911.0000",
+    "total_equity": "1211.0000"
+   },
+   "cash_flow": {
+    "beginning_cash": "180.0000",
+    "net_income": "287.0000",
+    "depreciation": "90.0000",
+    "change_in_receivables": "-19.0000",
+    "change_in_inventory": "76.0000",
+    "change_in_other_current_assets": "0.0000",
+    "change_in_payables": "-28.0000",
+    "change_in_other_current_liabilities": "0.0000",
+    "operating_cash_flow": "406.0000",
+    "capex": "-207.0000",
+    "investing_cash_flow": "-207.0000",
+    "revolver_net_borrowing": "0.0000",
+    "term_loan_repayment": "-40.0000",
+    "dividends": "-86.0000",
+    "financing_cash_flow": "-126.0000",
+    "net_change_in_cash": "73.0000",
+    "ending_cash": "253.0000"
+   }
+  },
+  {
+   "year": 2024,
+   "income_statement": {
+    "revenue": "2825.0000",
+    "cogs": "1695.0000",
+    "gross_profit": "1130.0000",
+    "sga": "593.0000",
+    "depreciation": "102.0000",
+    "ebit": "435.0000",
+    "interest_expense": "18.0000",
+    "pre_tax_income": "417.0000",
+    "tax_expense": "104.0000",
+    "net_income": "313.0000"
+   },
+   "balance_sheet": {
+    "cash": "278.0000",
+    "accounts_receivable": "282.0000",
+    "inventory": "255.0000",
+    "other_current_assets": "30.0000",
+    "ppe_net": "1141.0000",
+    "total_assets": "1986.0000",
+    "accounts_payable": "176.0000",
+    "other_current_liabilities": "60.0000",
+    "revolver": "0.0000",
+    "term_loan": "320.0000",
+    "total_liabilities": "556.0000",
+    "common_stock": "300.0000",
+    "retained_earnings": "1130.0000",
+    "total_equity": "1430.0000"
+   },
+   "cash_flow": {
+    "beginning_cash": "253.0000",
+    "net_income": "313.0000",
+    "depreciation": "102.0000",
+    "change_in_receivables": "-23.0000",
+    "change_in_inventory": "-21.0000",
+    "change_in_other_current_assets": "0.0000",
+    "change_in_payables": "14.0000",
+    "change_in_other_current_liabilities": "0.0000",
+    "operating_cash_flow": "385.0000",
+    "capex": "-226.0000",
+    "investing_cash_flow": "-226.0000",
+    "revolver_net_borrowing": "0.0000",
+    "term_loan_repayment": "-40.0000",
+    "dividends": "-94.0000",
+    "financing_cash_flow": "-134.0000",
+    "net_change_in_cash": "25.0000",
+    "ending_cash": "278.0000"
+   }
+  }
+ ],
+ "scenarios": {
+  "base": {
+   "years": [
+    {
+     "year": 2025,
+     "income_statement": {
+      "revenue": "3051.0000",
+      "cogs": "1830.6000",
+      "gross_profit": "1220.4000",
+      "sga": "640.7100",
+      "depreciation": "114.1000",
+      "ebit": "465.5900",
+      "interest_expense": "10.4400",
+      "pre_tax_income": "455.1500",
+      "tax_expense": "113.7875",
+      "net_income": "341.3625"
+     },
+     "balance_sheet": {
+      "cash": "-953.8071",
+      "accounts_receivable": "305.1000",
+      "inventory": "275.8438",
+      "other_current_assets": "30.0000",
+      "ppe_net": "2552.4000",
+      "total_assets": "2209.5368",
+      "accounts_payable": "190.5830",
+      "other_current_liabilities": "60.0000",
+      "revolver": "10.0000",
+      "term_loan": "280.0000",
+      "total_liabilities": "540.5830",
+      "common_stock": "300.0000",
+      "retained_earnings": "1368.9538",
+      "total_equity": "1668.9538"
+     },
+     "cash_flow": {
+      "beginning_cash": "278.0000",
+      "net_income": "341.3625",
+      "depreciation": "114.1000",
+      "change_in_receivables": "-23.1000",
+      "change_in_inventory": "-20.8438",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "14.5830",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "426.1017",
+      "capex": "-1525.5000",
+      "investing_cash_flow": "-1525.5000",
+      "revolver_net_borrowing": "10.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-102.4088",
+      "financing_cash_flow": "-132.4088",
+      "net_change_in_cash": "-1231.8071",
+      "ending_cash": "-953.8071"
+     }
+    },
+    {
+     "year": 2026,
+     "income_statement": {
+      "revenue": "3295.0800",
+      "cogs": "1977.0480",
+      "gross_profit": "1318.0320",
+      "sga": "691.9668",
+      "depreciation": "255.2400",
+      "ebit": "370.8252",
+      "interest_expense": "33.7761",
+      "pre_tax_income": "337.0491",
+      "tax_expense": "84.2623",
+      "net_income": "252.7868"
+     },
+     "balance_sheet": {
+      "cash": "-2240.3852",
+      "accounts_receivable": "329.5080",
+      "inventory": "297.9113",
+      "other_current_assets": "30.0000",
+      "ppe_net": "3944.7000",
+      "total_assets": "2361.7342",
+      "accounts_payable": "205.8297",
+      "other_current_liabilities": "60.0000",
+      "revolver": "10.0000",
+      "term_loan": "240.0000",
+      "total_liabilities": "515.8297",
+      "common_stock": "300.0000",
+      "retained_earnings": "1545.9045",
+      "total_equity": "1845.9045"
+     },
+     "cash_flow": {
+      "beginning_cash": "-953.8071",
+      "net_income": "252.7868",
+      "depreciation": "255.2400",
+      "change_in_receivables": "-24.4080",
+      "change_in_inventory": "-22.0675",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "15.2466",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "476.7979",
+      "capex": "-1647.5400",
+      "investing_cash_flow": "-1647.5400",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-75.8360",
+      "financing_cash_flow": "-115.8360",
+      "net_change_in_cash": "-1286.5781",
+      "ending_cash": "-2240.3852"
+     }
+    },
+    {
+     "year": 2027,
+     "income_statement": {
+      "revenue": "3558.6864",
+      "cogs": "2135.2118",
+      "gross_profit": "1423.4746",
+      "sga": "747.3241",
+      "depreciation": "394.4700",
+      "ebit": "281.6804",
+      "interest_expense": "57.5077",
+      "pre_tax_income": "224.1727",
+      "tax_expense": "56.0432",
+      "net_income": "168.1295"
+     },
+     "balance_sheet": {
+      "cash": "-3581.2949",
+      "accounts_receivable": "355.8686",
+      "inventory": "321.7442",
+      "other_current_assets": "30.0000",
+      "ppe_net": "5329.5732",
+      "total_assets": "2455.8912",
+      "accounts_payable": "222.2960",
+      "other_current_liabilities": "60.0000",
+      "revolver": "10.0000",
+      "term_loan": "200.0000",
+      "total_liabilities": "492.2960",
+      "common_stock": "300.0000",
+      "retained_earnings": "1663.5952",
+      "total_equity": "1963.5952"
+     },
+     "cash_flow": {
+      "beginning_cash": "-2240.3852",
+      "net_income": "168.1295",
+      "depreciation": "394.4700",
+      "change_in_receivables": "-26.3606",
+      "change_in_inventory": "-23.8329",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "16.4664",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "528.8724",
+      "capex": "-1779.3432",
+      "investing_cash_flow": "-1779.3432",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-50.4389",
+      "financing_cash_flow": "-90.4389",
+      "net_change_in_cash": "-1340.9097",
+      "ending_cash": "-3581.2949"
+     }
+    },
+    {
+     "year": 2028,
+     "income_statement": {
+      "revenue": "3843.3813",
+      "cogs": "2306.0288",
+      "gross_profit": "1537.3525",
+      "sga": "807.1101",
+      "depreciation": "532.9573",
+      "ebit": "197.2851",
+      "interest_expense": "82.3259",
+      "pre_tax_income": "114.9592",
+      "tax_expense": "28.7398",
+      "net_income": "86.2194"
+     },
+     "balance_sheet": {
+      "cash": "-4986.1000",
+      "accounts_receivable": "384.3381",
+      "inventory": "347.4838",
+      "other_current_assets": "30.0000",
+      "ppe_net": "6718.3065",
+      "total_assets": "2494.0285",
+      "accounts_payable": "240.0797",
+      "other_current_liabilities": "60.0000",
+      "revolver": "10.0000",
+      "term_loan": "160.0000",
+      "total_liabilities": "470.0797",
+      "common_stock": "300.0000",
+      "retained_earnings": "1723.9488",
+      "total_equity": "2023.9488"
+     },
+     "cash_flow": {
+      "beginning_cash": "-3581.2949",
+      "net_income": "86.2194",
+      "depreciation": "532.9573",
+      "change_in_receivables": "-28.4695",
+      "change_in_inventory": "-25.7395",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "17.7837",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "582.7514",
+      "capex": "-1921.6907",
+      "investing_cash_flow": "-1921.6907",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-25.8658",
+      "financing_cash_flow": "-65.8658",
+      "net_change_in_cash": "-1404.8051",
+      "ending_cash": "-4986.1000"
+     }
+    },
+    {
+     "year": 2029,
+     "income_statement": {
+      "revenue": "4150.8518",
+      "cogs": "2490.5111",
+      "gross_profit": "1660.3407",
+      "sga": "871.6789",
+      "depreciation": "671.8307",
+      "ebit": "116.8312",
+      "interest_expense": "108.4220",
+      "pre_tax_income": "8.4092",
+      "tax_expense": "2.1023",
+      "net_income": "6.3069"
+     },
+     "balance_sheet": {
+      "cash": "-6464.6198",
+      "accounts_receivable": "415.0852",
+      "inventory": "375.2825",
+      "other_current_assets": "30.0000",
+      "ppe_net": "8121.9018",
+      "total_assets": "2477.6497",
+      "accounts_payable": "259.2861",
+      "other_current_liabilities": "60.0000",
+      "revolver": "10.0000",
+      "term_loan": "120.0000",
+      "total_liabilities": "449.2861",
+      "common_stock": "300.0000",
+      "retained_earnings": "1728.3636",
+      "total_equity": "2028.3636"
+     },
+     "cash_flow": {
+      "beginning_cash": "-4986.1000",
+      "net_income": "6.3069",
+      "depreciation": "671.8307",
+      "change_in_receivables": "-30.7471",
+      "change_in_inventory": "-27.7987",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "19.2064",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "638.7982",
+      "capex": "-2075.4259",
+      "investing_cash_flow": "-2075.4259",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-1.8921",
+      "financing_cash_flow": "-41.8921",
+      "net_change_in_cash": "-1478.5198",
+      "ending_cash": "-6464.6198"
+     }
+    }
+   ],
+   "flags": [
+    {
+     "code": "REVOLVER_LIMIT_EXCEEDED",
+     "severity": "error",
+     "year": 2025,
+     "message": "Funding need exceeds the revolver limit by 1103.807071917808219178082192",
+     "amount": "1103.8071"
+    },
+    {
+     "code": "NEGATIVE_CASH",
+     "severity": "error",
+     "year": 2025,
+     "message": "Ending cash is negative (-953.807071917808219178082192)",
+     "amount": "-953.8071"
+    },
+    {
+     "code": "REVOLVER_LIMIT_EXCEEDED",
+     "severity": "error",
+     "year": 2026,
+     "message": "Funding need exceeds the revolver limit by 2390.385181926369863013698630",
+     "amount": "2390.3852"
+    },
+    {
+     "code": "NEGATIVE_CASH",
+     "severity": "error",
+     "year": 2026,
+     "message": "Ending cash is negative (-2240.385181926369863013698630)",
+     "amount": "-2240.3852"
+    },
+    {
+     "code": "REVOLVER_LIMIT_EXCEEDED",
+     "severity": "error",
+     "year": 2027,
+     "message": "Funding need exceeds the revolver limit by 3731.294882950295376712328766",
+     "amount": "3731.2949"
+    },
+    {
+     "code": "NEGATIVE_CASH",
+     "severity": "error",
+     "year": 2027,
+     "message": "Ending cash is negative (-3581.294882950295376712328767)",
+     "amount": "-3581.2949"
+    },
+    {
+     "code": "REVOLVER_LIMIT_EXCEEDED",
+     "severity": "error",
+     "year": 2028,
+     "message": "Funding need exceeds the revolver limit by 5136.099971364067998715753423",
+     "amount": "5136.1000"
+    },
+    {
+     "code": "NEGATIVE_CASH",
+     "severity": "error",
+     "year": 2028,
+     "message": "Ending cash is negative (-4986.099971364067998715753425)",
+     "amount": "-4986.1000"
+    },
+    {
+     "code": "REVOLVER_LIMIT_EXCEEDED",
+     "severity": "error",
+     "year": 2029,
+     "message": "Funding need exceeds the revolver limit by 6614.619777277608794894049656",
+     "amount": "6614.6198"
+    },
+    {
+     "code": "NEGATIVE_CASH",
+     "severity": "error",
+     "year": 2029,
+     "message": "Ending cash is negative (-6464.619777277608794894049658)",
+     "amount": "-6464.6198"
+    }
+   ],
+   "trace": {
+    "revenue@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "2825.0000"
+    },
+    "cash@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "278.0000"
+    },
+    "accounts_receivable@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "282.0000"
+    },
+    "inventory@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "255.0000"
+    },
+    "other_current_assets@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "30.0000"
+    },
+    "ppe@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "1141.0000"
+    },
+    "accounts_payable@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "176.0000"
+    },
+    "other_current_liabilities@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "60.0000"
+    },
+    "revolver@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "0.0000"
+    },
+    "term_loan@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "320.0000"
+    },
+    "retained_earnings@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "1130.0000"
+    },
+    "net_working_capital@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "331.0000"
+    },
+    "revenue@1": {
+     "formula": "revenue@0 \u00d7 (1 + 0.08)",
+     "inputs": {
+      "revenue@0": "2825.0000"
+     },
+     "value": "3051.0000"
+    },
+    "other_current_assets@1": {
+     "formula": "other_current_assets@0 (held flat)",
+     "inputs": {
+      "other_current_assets@0": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "depreciation@1": {
+     "formula": "ppe@0 \u00d7 0.10",
+     "inputs": {
+      "ppe@0": "1141.0000"
+     },
+     "value": "114.1000"
+    },
+    "other_current_liabilities@1": {
+     "formula": "other_current_liabilities@0 (held flat)",
+     "inputs": {
+      "other_current_liabilities@0": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "interest_expense@1": {
+     "formula": "term_loan@0 \u00d7 0.05 + revolver@0 \u00d7 0.07 - cash@0 \u00d7 0.02",
+     "inputs": {
+      "term_loan@0": "320.0000",
+      "revolver@0": "0.0000",
+      "cash@0": "278.0000"
+     },
+     "value": "10.4400"
+    },
+    "term_loan_repayment@1": {
+     "formula": "min(term_loan@0, 40)",
+     "inputs": {
+      "term_loan@0": "320.0000"
+     },
+     "value": "40.0000"
+    },
+    "cogs@1": {
+     "formula": "revenue@1 \u00d7 0.60",
+     "inputs": {
+      "revenue@1": "3051.0000"
+     },
+     "value": "1830.6000"
+    },
+    "sga@1": {
+     "formula": "revenue@1 \u00d7 0.21",
+     "inputs": {
+      "revenue@1": "3051.0000"
+     },
+     "value": "640.7100"
+    },
+    "capex@1": {
+     "formula": "revenue@1 \u00d7 0.5",
+     "inputs": {
+      "revenue@1": "3051.0000"
+     },
+     "value": "1525.5000"
+    },
+    "accounts_receivable@1": {
+     "formula": "revenue@1 \u00d7 36.5 / 365",
+     "inputs": {
+      "revenue@1": "3051.0000"
+     },
+     "value": "305.1000"
+    },
+    "revenue@2": {
+     "formula": "revenue@1 \u00d7 (1 + 0.08)",
+     "inputs": {
+      "revenue@1": "3051.0000"
+     },
+     "value": "3295.0800"
+    },
+    "other_current_assets@2": {
+     "formula": "other_current_assets@1 (held flat)",
+     "inputs": {
+      "other_current_assets@1": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@2": {
+     "formula": "other_current_liabilities@1 (held flat)",
+     "inputs": {
+      "other_current_liabilities@1": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan@1": {
+     "formula": "term_loan@0 - term_loan_repayment@1",
+     "inputs": {
+      "term_loan@0": "320.0000",
+      "term_loan_repayment@1": "40.0000"
+     },
+     "value": "280.0000"
+    },
+    "inventory@1": {
+     "formula": "cogs@1 \u00d7 55 / 365",
+     "inputs": {
+      "cogs@1": "1830.6000"
+     },
+     "value": "275.8438"
+    },
+    "accounts_payable@1": {
+     "formula": "cogs@1 \u00d7 38 / 365",
+     "inputs": {
+      "cogs@1": "1830.6000"
+     },
+     "value": "190.5830"
+    },
+    "pre_tax_income@1": {
+     "formula": "revenue@1 - cogs@1 - sga@1 - depreciation@1 - interest_expense@1",
+     "inputs": {
+      "revenue@1": "3051.0000",
+      "cogs@1": "1830.6000",
+      "sga@1": "640.7100",
+      "depreciation@1": "114.1000",
+      "interest_expense@1": "10.4400"
+     },
+     "value": "455.1500"
+    },
+    "ppe@1": {
+     "formula": "ppe@0 + capex@1 - depreciation@1",
+     "inputs": {
+      "ppe@0": "1141.0000",
+      "capex@1": "1525.5000",
+      "depreciation@1": "114.1000"
+     },
+     "value": "2552.4000"
+    },
+    "cogs@2": {
+     "formula": "revenue@2 \u00d7 0.60",
+     "inputs": {
+      "revenue@2": "3295.0800"
+     },
+     "value": "1977.0480"
+    },
+    "sga@2": {
+     "formula": "revenue@2 \u00d7 0.21",
+     "inputs": {
+      "revenue@2": "3295.0800"
+     },
+     "value": "691.9668"
+    },
+    "capex@2": {
+     "formula": "revenue@2 \u00d7 0.5",
+     "inputs": {
+      "revenue@2": "3295.0800"
+     },
+     "value": "1647.5400"
+    },
+    "accounts_receivable@2": {
+     "formula": "revenue@2 \u00d7 36.5 / 365",
+     "inputs": {
+      "revenue@2": "3295.0800"
+     },
+     "value": "329.5080"
+    },
+    "revenue@3": {
+     "formula": "revenue@2 \u00d7 (1 + 0.08)",
+     "inputs": {
+      "revenue@2": "3295.0800"
+     },
+     "value": "3558.6864"
+    },
+    "other_current_assets@3": {
+     "formula": "other_current_assets@2 (held flat)",
+     "inputs": {
+      "other_current_assets@2": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@3": {
+     "formula": "other_current_liabilities@2 (held flat)",
+     "inputs": {
+      "other_current_liabilities@2": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan_repayment@2": {
+     "formula": "min(term_loan@1, 40)",
+     "inputs": {
+      "term_loan@1": "280.0000"
+     },
+     "value": "40.0000"
+    },
+    "net_working_capital@1": {
+     "formula": "accounts_receivable@1 + inventory@1 + other_current_assets@1 - accounts_payable@1 - other_current_liabilities@1",
+     "inputs": {
+      "accounts_receivable@1": "305.1000",
+      "inventory@1": "275.8438",
+      "other_current_assets@1": "30.0000",
+      "accounts_payable@1": "190.5830",
+      "other_current_liabilities@1": "60.0000"
+     },
+     "value": "360.3608"
+    },
+    "tax_expense@1": {
+     "formula": "max(0, pre_tax_income@1) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@1": "455.1500"
+     },
+     "value": "113.7875"
+    },
+    "depreciation@2": {
+     "formula": "ppe@1 \u00d7 0.10",
+     "inputs": {
+      "ppe@1": "2552.4000"
+     },
+     "value": "255.2400"
+    },
+    "inventory@2": {
+     "formula": "cogs@2 \u00d7 55 / 365",
+     "inputs": {
+      "cogs@2": "1977.0480"
+     },
+     "value": "297.9113"
+    },
+    "accounts_payable@2": {
+     "formula": "cogs@2 \u00d7 38 / 365",
+     "inputs": {
+      "cogs@2": "1977.0480"
+     },
+     "value": "205.8297"
+    },
+    "cogs@3": {
+     "formula": "revenue@3 \u00d7 0.60",
+     "inputs": {
+      "revenue@3": "3558.6864"
+     },
+     "value": "2135.2118"
+    },
+    "sga@3": {
+     "formula": "revenue@3 \u00d7 0.21",
+     "inputs": {
+      "revenue@3": "3558.6864"
+     },
+     "value": "747.3241"
+    },
+    "capex@3": {
+     "formula": "revenue@3 \u00d7 0.5",
+     "inputs": {
+      "revenue@3": "3558.6864"
+     },
+     "value": "1779.3432"
+    },
+    "accounts_receivable@3": {
+     "formula": "revenue@3 \u00d7 36.5 / 365",
+     "inputs": {
+      "revenue@3": "3558.6864"
+     },
+     "value": "355.8686"
+    },
+    "revenue@4": {
+     "formula": "revenue@3 \u00d7 (1 + 0.08)",
+     "inputs": {
+      "revenue@3": "3558.6864"
+     },
+     "value": "3843.3813"
+    },
+    "other_current_assets@4": {
+     "formula": "other_current_assets@3 (held flat)",
+     "inputs": {
+      "other_current_assets@3": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@4": {
+     "formula": "other_current_liabilities@3 (held flat)",
+     "inputs": {
+      "other_current_liabilities@3": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan@2": {
+     "formula": "term_loan@1 - term_loan_repayment@2",
+     "inputs": {
+      "term_loan@1": "280.0000",
+      "term_loan_repayment@2": "40.0000"
+     },
+     "value": "240.0000"
+    },
+    "nwc_change@1": {
+     "formula": "net_working_capital@1 - net_working_capital@0",
+     "inputs": {
+      "net_working_capital@1": "360.3608",
+      "net_working_capital@0": "331.0000"
+     },
+     "value": "29.3608"
+    },
+    "net_income@1": {
+     "formula": "pre_tax_income@1 - tax_expense@1",
+     "inputs": {
+      "pre_tax_income@1": "455.1500",
+      "tax_expense@1": "113.7875"
+     },
+     "value": "341.3625"
+    },
+    "ppe@2": {
+     "formula": "ppe@1 + capex@2 - depreciation@2",
+     "inputs": {
+      "ppe@1": "2552.4000",
+      "capex@2": "1647.5400",
+      "depreciation@2": "255.2400"
+     },
+     "value": "3944.7000"
+    },
+    "net_working_capital@2": {
+     "formula": "accounts_receivable@2 + inventory@2 + other_current_assets@2 - accounts_payable@2 - other_current_liabilities@2",
+     "inputs": {
+      "accounts_receivable@2": "329.5080",
+      "inventory@2": "297.9113",
+      "other_current_assets@2": "30.0000",
+      "accounts_payable@2": "205.8297",
+      "other_current_liabilities@2": "60.0000"
+     },
+     "value": "391.5897"
+    },
+    "inventory@3": {
+     "formula": "cogs@3 \u00d7 55 / 365",
+     "inputs": {
+      "cogs@3": "2135.2118"
+     },
+     "value": "321.7442"
+    },
+    "accounts_payable@3": {
+     "formula": "cogs@3 \u00d7 38 / 365",
+     "inputs": {
+      "cogs@3": "2135.2118"
+     },
+     "value": "222.2960"
+    },
+    "cogs@4": {
+     "formula": "revenue@4 \u00d7 0.60",
+     "inputs": {
+      "revenue@4": "3843.3813"
+     },
+     "value": "2306.0288"
+    },
+    "sga@4": {
+     "formula": "revenue@4 \u00d7 0.21",
+     "inputs": {
+      "revenue@4": "3843.3813"
+     },
+     "value": "807.1101"
+    },
+    "capex@4": {
+     "formula": "revenue@4 \u00d7 0.5",
+     "inputs": {
+      "revenue@4": "3843.3813"
+     },
+     "value": "1921.6907"
+    },
+    "accounts_receivable@4": {
+     "formula": "revenue@4 \u00d7 36.5 / 365",
+     "inputs": {
+      "revenue@4": "3843.3813"
+     },
+     "value": "384.3381"
+    },
+    "revenue@5": {
+     "formula": "revenue@4 \u00d7 (1 + 0.08)",
+     "inputs": {
+      "revenue@4": "3843.3813"
+     },
+     "value": "4150.8518"
+    },
+    "other_current_assets@5": {
+     "formula": "other_current_assets@4 (held flat)",
+     "inputs": {
+      "other_current_assets@4": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@5": {
+     "formula": "other_current_liabilities@4 (held flat)",
+     "inputs": {
+      "other_current_liabilities@4": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan_repayment@3": {
+     "formula": "min(term_loan@2, 40)",
+     "inputs": {
+      "term_loan@2": "240.0000"
+     },
+     "value": "40.0000"
+    },
+    "dividends@1": {
+     "formula": "max(0, net_income@1) \u00d7 0.30",
+     "inputs": {
+      "net_income@1": "341.3625"
+     },
+     "value": "102.4088"
+    },
+    "depreciation@3": {
+     "formula": "ppe@2 \u00d7 0.10",
+     "inputs": {
+      "ppe@2": "3944.7000"
+     },
+     "value": "394.4700"
+    },
+    "nwc_change@2": {
+     "formula": "net_working_capital@2 - net_working_capital@1",
+     "inputs": {
+      "net_working_capital@2": "391.5897",
+      "net_working_capital@1": "360.3608"
+     },
+     "value": "31.2289"
+    },
+    "net_working_capital@3": {
+     "formula": "accounts_receivable@3 + inventory@3 + other_current_assets@3 - accounts_payable@3 - other_current_liabilities@3",
+     "inputs": {
+      "accounts_receivable@3": "355.8686",
+      "inventory@3": "321.7442",
+      "other_current_assets@3": "30.0000",
+      "accounts_payable@3": "222.2960",
+      "other_current_liabilities@3": "60.0000"
+     },
+     "value": "425.3169"
+    },
+    "inventory@4": {
+     "formula": "cogs@4 \u00d7 55 / 365",
+     "inputs": {
+      "cogs@4": "2306.0288"
+     },
+     "value": "347.4838"
+    },
+    "accounts_payable@4": {
+     "formula": "cogs@4 \u00d7 38 / 365",
+     "inputs": {
+      "cogs@4": "2306.0288"
+     },
+     "value": "240.0797"
+    },
+    "cogs@5": {
+     "formula": "revenue@5 \u00d7 0.60",
+     "inputs": {
+      "revenue@5": "4150.8518"
+     },
+     "value": "2490.5111"
+    },
+    "sga@5": {
+     "formula": "revenue@5 \u00d7 0.21",
+     "inputs": {
+      "revenue@5": "4150.8518"
+     },
+     "value": "871.6789"
+    },
+    "capex@5": {
+     "formula": "revenue@5 \u00d7 0.5",
+     "inputs": {
+      "revenue@5": "4150.8518"
+     },
+     "value": "2075.4259"
+    },
+    "accounts_receivable@5": {
+     "formula": "revenue@5 \u00d7 36.5 / 365",
+     "inputs": {
+      "revenue@5": "4150.8518"
+     },
+     "value": "415.0852"
+    },
+    "term_loan@3": {
+     "formula": "term_loan@2 - term_loan_repayment@3",
+     "inputs": {
+      "term_loan@2": "240.0000",
+      "term_loan_repayment@3": "40.0000"
+     },
+     "value": "200.0000"
+    },
+    "cash_before_revolver@1": {
+     "formula": "cash@0 + net_income@1 + depreciation@1 - nwc_change@1 - capex@1 - term_loan_repayment@1 - dividends@1",
+     "inputs": {
+      "cash@0": "278.0000",
+      "net_income@1": "341.3625",
+      "depreciation@1": "114.1000",
+      "nwc_change@1": "29.3608",
+      "capex@1": "1525.5000",
+      "term_loan_repayment@1": "40.0000",
+      "dividends@1": "102.4088"
+     },
+     "value": "-963.8071"
+    },
+    "retained_earnings@1": {
+     "formula": "retained_earnings@0 + net_income@1 - dividends@1",
+     "inputs": {
+      "retained_earnings@0": "1130.0000",
+      "net_income@1": "341.3625",
+      "dividends@1": "102.4088"
+     },
+     "value": "1368.9538"
+    },
+    "ppe@3": {
+     "formula": "ppe@2 + capex@3 - depreciation@3",
+     "inputs": {
+      "ppe@2": "3944.7000",
+      "capex@3": "1779.3432",
+      "depreciation@3": "394.4700"
+     },
+     "value": "5329.5732"
+    },
+    "nwc_change@3": {
+     "formula": "net_working_capital@3 - net_working_capital@2",
+     "inputs": {
+      "net_working_capital@3": "425.3169",
+      "net_working_capital@2": "391.5897"
+     },
+     "value": "33.7272"
+    },
+    "net_working_capital@4": {
+     "formula": "accounts_receivable@4 + inventory@4 + other_current_assets@4 - accounts_payable@4 - other_current_liabilities@4",
+     "inputs": {
+      "accounts_receivable@4": "384.3381",
+      "inventory@4": "347.4838",
+      "other_current_assets@4": "30.0000",
+      "accounts_payable@4": "240.0797",
+      "other_current_liabilities@4": "60.0000"
+     },
+     "value": "461.7422"
+    },
+    "inventory@5": {
+     "formula": "cogs@5 \u00d7 55 / 365",
+     "inputs": {
+      "cogs@5": "2490.5111"
+     },
+     "value": "375.2825"
+    },
+    "accounts_payable@5": {
+     "formula": "cogs@5 \u00d7 38 / 365",
+     "inputs": {
+      "cogs@5": "2490.5111"
+     },
+     "value": "259.2861"
+    },
+    "term_loan_repayment@4": {
+     "formula": "min(term_loan@3, 40)",
+     "inputs": {
+      "term_loan@3": "200.0000"
+     },
+     "value": "40.0000"
+    },
+    "revolver_draw@1": {
+     "formula": "min(max(0, 150 - cash_before_revolver@1), max(0, 10 - revolver@0))",
+     "inputs": {
+      "cash_before_revolver@1": "-963.8071",
+      "revolver@0": "0.0000"
+     },
+     "value": "10.0000"
+    },
+    "revolver_repayment@1": {
+     "formula": "min(revolver@0, max(0, cash_before_revolver@1 - 150))",
+     "inputs": {
+      "cash_before_revolver@1": "-963.8071",
+      "revolver@0": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "depreciation@4": {
+     "formula": "ppe@3 \u00d7 0.10",
+     "inputs": {
+      "ppe@3": "5329.5732"
+     },
+     "value": "532.9573"
+    },
+    "nwc_change@4": {
+     "formula": "net_working_capital@4 - net_working_capital@3",
+     "inputs": {
+      "net_working_capital@4": "461.7422",
+      "net_working_capital@3": "425.3169"
+     },
+     "value": "36.4253"
+    },
+    "net_working_capital@5": {
+     "formula": "accounts_receivable@5 + inventory@5 + other_current_assets@5 - accounts_payable@5 - other_current_liabilities@5",
+     "inputs": {
+      "accounts_receivable@5": "415.0852",
+      "inventory@5": "375.2825",
+      "other_current_assets@5": "30.0000",
+      "accounts_payable@5": "259.2861",
+      "other_current_liabilities@5": "60.0000"
+     },
+     "value": "501.0816"
+    },
+    "term_loan@4": {
+     "formula": "term_loan@3 - term_loan_repayment@4",
+     "inputs": {
+      "term_loan@3": "200.0000",
+      "term_loan_repayment@4": "40.0000"
+     },
+     "value": "160.0000"
+    },
+    "unfunded_shortfall@1": {
+     "formula": "max(0, 150 - cash_before_revolver@1) - revolver_draw@1",
+     "inputs": {
+      "cash_before_revolver@1": "-963.8071",
+      "revolver_draw@1": "10.0000"
+     },
+     "value": "1103.8071"
+    },
+    "revolver@1": {
+     "formula": "revolver@0 + revolver_draw@1 - revolver_repayment@1",
+     "inputs": {
+      "revolver@0": "0.0000",
+      "revolver_draw@1": "10.0000",
+      "revolver_repayment@1": "0.0000"
+     },
+     "value": "10.0000"
+    },
+    "cash@1": {
+     "formula": "cash_before_revolver@1 + revolver_draw@1 - revolver_repayment@1",
+     "inputs": {
+      "cash_before_revolver@1": "-963.8071",
+      "revolver_draw@1": "10.0000",
+      "revolver_repayment@1": "0.0000"
+     },
+     "value": "-953.8071"
+    },
+    "ppe@4": {
+     "formula": "ppe@3 + capex@4 - depreciation@4",
+     "inputs": {
+      "ppe@3": "5329.5732",
+      "capex@4": "1921.6907",
+      "depreciation@4": "532.9573"
+     },
+     "value": "6718.3065"
+    },
+    "nwc_change@5": {
+     "formula": "net_working_capital@5 - net_working_capital@4",
+     "inputs": {
+      "net_working_capital@5": "501.0816",
+      "net_working_capital@4": "461.7422"
+     },
+     "value": "39.3394"
+    },
+    "term_loan_repayment@5": {
+     "formula": "min(term_loan@4, 40)",
+     "inputs": {
+      "term_loan@4": "160.0000"
+     },
+     "value": "40.0000"
+    },
+    "interest_expense@2": {
+     "formula": "term_loan@1 \u00d7 0.05 + revolver@1 \u00d7 0.07 - cash@1 \u00d7 0.02",
+     "inputs": {
+      "term_loan@1": "280.0000",
+      "revolver@1": "10.0000",
+      "cash@1": "-953.8071"
+     },
+     "value": "33.7761"
+    },
+    "depreciation@5": {
+     "formula": "ppe@4 \u00d7 0.10",
+     "inputs": {
+      "ppe@4": "6718.3065"
+     },
+     "value": "671.8307"
+    },
+    "term_loan@5": {
+     "formula": "term_loan@4 - term_loan_repayment@5",
+     "inputs": {
+      "term_loan@4": "160.0000",
+      "term_loan_repayment@5": "40.0000"
+     },
+     "value": "120.0000"
+    },
+    "pre_tax_income@2": {
+     "formula": "revenue@2 - cogs@2 - sga@2 - depreciation@2 - interest_expense@2",
+     "inputs": {
+      "revenue@2": "3295.0800",
+      "cogs@2": "1977.0480",
+      "sga@2": "691.9668",
+      "depreciation@2": "255.2400",
+      "interest_expense@2": "33.7761"
+     },
+     "value": "337.0491"
+    },
+    "ppe@5": {
+     "formula": "ppe@4 + capex@5 - depreciation@5",
+     "inputs": {
+      "ppe@4": "6718.3065",
+      "capex@5": "2075.4259",
+      "depreciation@5": "671.8307"
+     },
+     "value": "8121.9018"
+    },
+    "tax_expense@2": {
+     "formula": "max(0, pre_tax_income@2) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@2": "337.0491"
+     },
+     "value": "84.2623"
+    },
+    "net_income@2": {
+     "formula": "pre_tax_income@2 - tax_expense@2",
+     "inputs": {
+      "pre_tax_income@2": "337.0491",
+      "tax_expense@2": "84.2623"
+     },
+     "value": "252.7868"
+    },
+    "dividends@2": {
+     "formula": "max(0, net_income@2) \u00d7 0.30",
+     "inputs": {
+      "net_income@2": "252.7868"
+     },
+     "value": "75.8360"
+    },
+    "cash_before_revolver@2": {
+     "formula": "cash@1 + net_income@2 + depreciation@2 - nwc_change@2 - capex@2 - term_loan_repayment@2 - dividends@2",
+     "inputs": {
+      "cash@1": "-953.8071",
+      "net_income@2": "252.7868",
+      "depreciation@2": "255.2400",
+      "nwc_change@2": "31.2289",
+      "capex@2": "1647.5400",
+      "term_loan_repayment@2": "40.0000",
+      "dividends@2": "75.8360"
+     },
+     "value": "-2240.3852"
+    },
+    "retained_earnings@2": {
+     "formula": "retained_earnings@1 + net_income@2 - dividends@2",
+     "inputs": {
+      "retained_earnings@1": "1368.9538",
+      "net_income@2": "252.7868",
+      "dividends@2": "75.8360"
+     },
+     "value": "1545.9045"
+    },
+    "revolver_draw@2": {
+     "formula": "min(max(0, 150 - cash_before_revolver@2), max(0, 10 - revolver@1))",
+     "inputs": {
+      "cash_before_revolver@2": "-2240.3852",
+      "revolver@1": "10.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@2": {
+     "formula": "min(revolver@1, max(0, cash_before_revolver@2 - 150))",
+     "inputs": {
+      "cash_before_revolver@2": "-2240.3852",
+      "revolver@1": "10.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@2": {
+     "formula": "max(0, 150 - cash_before_revolver@2) - revolver_draw@2",
+     "inputs": {
+      "cash_before_revolver@2": "-2240.3852",
+      "revolver_draw@2": "0.0000"
+     },
+     "value": "2390.3852"
+    },
+    "revolver@2": {
+     "formula": "revolver@1 + revolver_draw@2 - revolver_repayment@2",
+     "inputs": {
+      "revolver@1": "10.0000",
+      "revolver_draw@2": "0.0000",
+      "revolver_repayment@2": "0.0000"
+     },
+     "value": "10.0000"
+    },
+    "cash@2": {
+     "formula": "cash_before_revolver@2 + revolver_draw@2 - revolver_repayment@2",
+     "inputs": {
+      "cash_before_revolver@2": "-2240.3852",
+      "revolver_draw@2": "0.0000",
+      "revolver_repayment@2": "0.0000"
+     },
+     "value": "-2240.3852"
+    },
+    "interest_expense@3": {
+     "formula": "term_loan@2 \u00d7 0.05 + revolver@2 \u00d7 0.07 - cash@2 \u00d7 0.02",
+     "inputs": {
+      "term_loan@2": "240.0000",
+      "revolver@2": "10.0000",
+      "cash@2": "-2240.3852"
+     },
+     "value": "57.5077"
+    },
+    "pre_tax_income@3": {
+     "formula": "revenue@3 - cogs@3 - sga@3 - depreciation@3 - interest_expense@3",
+     "inputs": {
+      "revenue@3": "3558.6864",
+      "cogs@3": "2135.2118",
+      "sga@3": "747.3241",
+      "depreciation@3": "394.4700",
+      "interest_expense@3": "57.5077"
+     },
+     "value": "224.1727"
+    },
+    "tax_expense@3": {
+     "formula": "max(0, pre_tax_income@3) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@3": "224.1727"
+     },
+     "value": "56.0432"
+    },
+    "net_income@3": {
+     "formula": "pre_tax_income@3 - tax_expense@3",
+     "inputs": {
+      "pre_tax_income@3": "224.1727",
+      "tax_expense@3": "56.0432"
+     },
+     "value": "168.1295"
+    },
+    "dividends@3": {
+     "formula": "max(0, net_income@3) \u00d7 0.30",
+     "inputs": {
+      "net_income@3": "168.1295"
+     },
+     "value": "50.4389"
+    },
+    "cash_before_revolver@3": {
+     "formula": "cash@2 + net_income@3 + depreciation@3 - nwc_change@3 - capex@3 - term_loan_repayment@3 - dividends@3",
+     "inputs": {
+      "cash@2": "-2240.3852",
+      "net_income@3": "168.1295",
+      "depreciation@3": "394.4700",
+      "nwc_change@3": "33.7272",
+      "capex@3": "1779.3432",
+      "term_loan_repayment@3": "40.0000",
+      "dividends@3": "50.4389"
+     },
+     "value": "-3581.2949"
+    },
+    "retained_earnings@3": {
+     "formula": "retained_earnings@2 + net_income@3 - dividends@3",
+     "inputs": {
+      "retained_earnings@2": "1545.9045",
+      "net_income@3": "168.1295",
+      "dividends@3": "50.4389"
+     },
+     "value": "1663.5952"
+    },
+    "revolver_draw@3": {
+     "formula": "min(max(0, 150 - cash_before_revolver@3), max(0, 10 - revolver@2))",
+     "inputs": {
+      "cash_before_revolver@3": "-3581.2949",
+      "revolver@2": "10.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@3": {
+     "formula": "min(revolver@2, max(0, cash_before_revolver@3 - 150))",
+     "inputs": {
+      "cash_before_revolver@3": "-3581.2949",
+      "revolver@2": "10.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@3": {
+     "formula": "max(0, 150 - cash_before_revolver@3) - revolver_draw@3",
+     "inputs": {
+      "cash_before_revolver@3": "-3581.2949",
+      "revolver_draw@3": "0.0000"
+     },
+     "value": "3731.2949"
+    },
+    "revolver@3": {
+     "formula": "revolver@2 + revolver_draw@3 - revolver_repayment@3",
+     "inputs": {
+      "revolver@2": "10.0000",
+      "revolver_draw@3": "0.0000",
+      "revolver_repayment@3": "0.0000"
+     },
+     "value": "10.0000"
+    },
+    "cash@3": {
+     "formula": "cash_before_revolver@3 + revolver_draw@3 - revolver_repayment@3",
+     "inputs": {
+      "cash_before_revolver@3": "-3581.2949",
+      "revolver_draw@3": "0.0000",
+      "revolver_repayment@3": "0.0000"
+     },
+     "value": "-3581.2949"
+    },
+    "interest_expense@4": {
+     "formula": "term_loan@3 \u00d7 0.05 + revolver@3 \u00d7 0.07 - cash@3 \u00d7 0.02",
+     "inputs": {
+      "term_loan@3": "200.0000",
+      "revolver@3": "10.0000",
+      "cash@3": "-3581.2949"
+     },
+     "value": "82.3259"
+    },
+    "pre_tax_income@4": {
+     "formula": "revenue@4 - cogs@4 - sga@4 - depreciation@4 - interest_expense@4",
+     "inputs": {
+      "revenue@4": "3843.3813",
+      "cogs@4": "2306.0288",
+      "sga@4": "807.1101",
+      "depreciation@4": "532.9573",
+      "interest_expense@4": "82.3259"
+     },
+     "value": "114.9592"
+    },
+    "tax_expense@4": {
+     "formula": "max(0, pre_tax_income@4) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@4": "114.9592"
+     },
+     "value": "28.7398"
+    },
+    "net_income@4": {
+     "formula": "pre_tax_income@4 - tax_expense@4",
+     "inputs": {
+      "pre_tax_income@4": "114.9592",
+      "tax_expense@4": "28.7398"
+     },
+     "value": "86.2194"
+    },
+    "dividends@4": {
+     "formula": "max(0, net_income@4) \u00d7 0.30",
+     "inputs": {
+      "net_income@4": "86.2194"
+     },
+     "value": "25.8658"
+    },
+    "cash_before_revolver@4": {
+     "formula": "cash@3 + net_income@4 + depreciation@4 - nwc_change@4 - capex@4 - term_loan_repayment@4 - dividends@4",
+     "inputs": {
+      "cash@3": "-3581.2949",
+      "net_income@4": "86.2194",
+      "depreciation@4": "532.9573",
+      "nwc_change@4": "36.4253",
+      "capex@4": "1921.6907",
+      "term_loan_repayment@4": "40.0000",
+      "dividends@4": "25.8658"
+     },
+     "value": "-4986.1000"
+    },
+    "retained_earnings@4": {
+     "formula": "retained_earnings@3 + net_income@4 - dividends@4",
+     "inputs": {
+      "retained_earnings@3": "1663.5952",
+      "net_income@4": "86.2194",
+      "dividends@4": "25.8658"
+     },
+     "value": "1723.9488"
+    },
+    "revolver_draw@4": {
+     "formula": "min(max(0, 150 - cash_before_revolver@4), max(0, 10 - revolver@3))",
+     "inputs": {
+      "cash_before_revolver@4": "-4986.1000",
+      "revolver@3": "10.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@4": {
+     "formula": "min(revolver@3, max(0, cash_before_revolver@4 - 150))",
+     "inputs": {
+      "cash_before_revolver@4": "-4986.1000",
+      "revolver@3": "10.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@4": {
+     "formula": "max(0, 150 - cash_before_revolver@4) - revolver_draw@4",
+     "inputs": {
+      "cash_before_revolver@4": "-4986.1000",
+      "revolver_draw@4": "0.0000"
+     },
+     "value": "5136.1000"
+    },
+    "revolver@4": {
+     "formula": "revolver@3 + revolver_draw@4 - revolver_repayment@4",
+     "inputs": {
+      "revolver@3": "10.0000",
+      "revolver_draw@4": "0.0000",
+      "revolver_repayment@4": "0.0000"
+     },
+     "value": "10.0000"
+    },
+    "cash@4": {
+     "formula": "cash_before_revolver@4 + revolver_draw@4 - revolver_repayment@4",
+     "inputs": {
+      "cash_before_revolver@4": "-4986.1000",
+      "revolver_draw@4": "0.0000",
+      "revolver_repayment@4": "0.0000"
+     },
+     "value": "-4986.1000"
+    },
+    "interest_expense@5": {
+     "formula": "term_loan@4 \u00d7 0.05 + revolver@4 \u00d7 0.07 - cash@4 \u00d7 0.02",
+     "inputs": {
+      "term_loan@4": "160.0000",
+      "revolver@4": "10.0000",
+      "cash@4": "-4986.1000"
+     },
+     "value": "108.4220"
+    },
+    "pre_tax_income@5": {
+     "formula": "revenue@5 - cogs@5 - sga@5 - depreciation@5 - interest_expense@5",
+     "inputs": {
+      "revenue@5": "4150.8518",
+      "cogs@5": "2490.5111",
+      "sga@5": "871.6789",
+      "depreciation@5": "671.8307",
+      "interest_expense@5": "108.4220"
+     },
+     "value": "8.4092"
+    },
+    "tax_expense@5": {
+     "formula": "max(0, pre_tax_income@5) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@5": "8.4092"
+     },
+     "value": "2.1023"
+    },
+    "net_income@5": {
+     "formula": "pre_tax_income@5 - tax_expense@5",
+     "inputs": {
+      "pre_tax_income@5": "8.4092",
+      "tax_expense@5": "2.1023"
+     },
+     "value": "6.3069"
+    },
+    "dividends@5": {
+     "formula": "max(0, net_income@5) \u00d7 0.30",
+     "inputs": {
+      "net_income@5": "6.3069"
+     },
+     "value": "1.8921"
+    },
+    "cash_before_revolver@5": {
+     "formula": "cash@4 + net_income@5 + depreciation@5 - nwc_change@5 - capex@5 - term_loan_repayment@5 - dividends@5",
+     "inputs": {
+      "cash@4": "-4986.1000",
+      "net_income@5": "6.3069",
+      "depreciation@5": "671.8307",
+      "nwc_change@5": "39.3394",
+      "capex@5": "2075.4259",
+      "term_loan_repayment@5": "40.0000",
+      "dividends@5": "1.8921"
+     },
+     "value": "-6464.6198"
+    },
+    "retained_earnings@5": {
+     "formula": "retained_earnings@4 + net_income@5 - dividends@5",
+     "inputs": {
+      "retained_earnings@4": "1723.9488",
+      "net_income@5": "6.3069",
+      "dividends@5": "1.8921"
+     },
+     "value": "1728.3636"
+    },
+    "revolver_draw@5": {
+     "formula": "min(max(0, 150 - cash_before_revolver@5), max(0, 10 - revolver@4))",
+     "inputs": {
+      "cash_before_revolver@5": "-6464.6198",
+      "revolver@4": "10.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@5": {
+     "formula": "min(revolver@4, max(0, cash_before_revolver@5 - 150))",
+     "inputs": {
+      "cash_before_revolver@5": "-6464.6198",
+      "revolver@4": "10.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@5": {
+     "formula": "max(0, 150 - cash_before_revolver@5) - revolver_draw@5",
+     "inputs": {
+      "cash_before_revolver@5": "-6464.6198",
+      "revolver_draw@5": "0.0000"
+     },
+     "value": "6614.6198"
+    },
+    "revolver@5": {
+     "formula": "revolver@4 + revolver_draw@5 - revolver_repayment@5",
+     "inputs": {
+      "revolver@4": "10.0000",
+      "revolver_draw@5": "0.0000",
+      "revolver_repayment@5": "0.0000"
+     },
+     "value": "10.0000"
+    },
+    "cash@5": {
+     "formula": "cash_before_revolver@5 + revolver_draw@5 - revolver_repayment@5",
+     "inputs": {
+      "cash_before_revolver@5": "-6464.6198",
+      "revolver_draw@5": "0.0000",
+      "revolver_repayment@5": "0.0000"
+     },
+     "value": "-6464.6198"
+    }
+   }
+  },
+  "upside": {
+   "years": [
+    {
+     "year": 2025,
+     "income_statement": {
+      "revenue": "3135.7500",
+      "cogs": "1850.0925",
+      "gross_profit": "1285.6575",
+      "sga": "658.5075",
+      "depreciation": "114.1000",
+      "ebit": "513.0500",
+      "interest_expense": "10.4400",
+      "pre_tax_income": "502.6100",
+      "tax_expense": "125.6525",
+      "net_income": "376.9575"
+     },
+     "balance_sheet": {
+      "cash": "368.8925",
+      "accounts_receivable": "296.3928",
+      "inventory": "263.5748",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1277.7600",
+      "total_assets": "2236.6201",
+      "accounts_payable": "202.7499",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "280.0000",
+      "total_liabilities": "542.7499",
+      "common_stock": "300.0000",
+      "retained_earnings": "1393.8702",
+      "total_equity": "1693.8702"
+     },
+     "cash_flow": {
+      "beginning_cash": "278.0000",
+      "net_income": "376.9575",
+      "depreciation": "114.1000",
+      "change_in_receivables": "-14.3928",
+      "change_in_inventory": "-8.5748",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "26.7499",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "494.8397",
+      "capex": "-250.8600",
+      "investing_cash_flow": "-250.8600",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-113.0872",
+      "financing_cash_flow": "-153.0872",
+      "net_change_in_cash": "90.8925",
+      "ending_cash": "368.8925"
+     }
+    },
+    {
+     "year": 2026,
+     "income_statement": {
+      "revenue": "3480.6825",
+      "cogs": "2053.6027",
+      "gross_profit": "1427.0798",
+      "sga": "730.9433",
+      "depreciation": "127.7760",
+      "ebit": "568.3605",
+      "interest_expense": "6.6222",
+      "pre_tax_income": "561.7383",
+      "tax_expense": "140.4346",
+      "net_income": "421.3038"
+     },
+     "balance_sheet": {
+      "cash": "433.8326",
+      "accounts_receivable": "328.9960",
+      "inventory": "292.5681",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1428.4386",
+      "total_assets": "2513.8352",
+      "accounts_payable": "225.0523",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "240.0000",
+      "total_liabilities": "525.0523",
+      "common_stock": "300.0000",
+      "retained_earnings": "1688.7829",
+      "total_equity": "1988.7829"
+     },
+     "cash_flow": {
+      "beginning_cash": "368.8925",
+      "net_income": "421.3038",
+      "depreciation": "127.7760",
+      "change_in_receivables": "-32.6032",
+      "change_in_inventory": "-28.9932",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "22.3025",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "509.7858",
+      "capex": "-278.4546",
+      "investing_cash_flow": "-278.4546",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-126.3911",
+      "financing_cash_flow": "-166.3911",
+      "net_change_in_cash": "64.9401",
+      "ending_cash": "433.8326"
+     }
+    },
+    {
+     "year": 2027,
+     "income_statement": {
+      "revenue": "3863.5576",
+      "cogs": "2279.4990",
+      "gross_profit": "1584.0586",
+      "sga": "811.3471",
+      "depreciation": "142.8439",
+      "ebit": "629.8677",
+      "interest_expense": "3.3233",
+      "pre_tax_income": "626.5443",
+      "tax_expense": "156.6361",
+      "net_income": "469.9082"
+     },
+     "balance_sheet": {
+      "cash": "512.9113",
+      "accounts_receivable": "365.1856",
+      "inventory": "324.7505",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1594.6793",
+      "total_assets": "2827.5268",
+      "accounts_payable": "249.8081",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "200.0000",
+      "total_liabilities": "509.8081",
+      "common_stock": "300.0000",
+      "retained_earnings": "2017.7186",
+      "total_equity": "2317.7186"
+     },
+     "cash_flow": {
+      "beginning_cash": "433.8326",
+      "net_income": "469.9082",
+      "depreciation": "142.8439",
+      "change_in_receivables": "-36.1896",
+      "change_in_inventory": "-32.1825",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "24.7558",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "569.1358",
+      "capex": "-309.0846",
+      "investing_cash_flow": "-309.0846",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-140.9725",
+      "financing_cash_flow": "-180.9725",
+      "net_change_in_cash": "79.0787",
+      "ending_cash": "512.9113"
+     }
+    },
+    {
+     "year": 2028,
+     "income_statement": {
+      "revenue": "4288.5489",
+      "cogs": "2530.2439",
+      "gross_profit": "1758.3051",
+      "sga": "900.5953",
+      "depreciation": "159.4679",
+      "ebit": "698.2418",
+      "interest_expense": "-0.2582",
+      "pre_tax_income": "698.5001",
+      "tax_expense": "174.6250",
+      "net_income": "523.8751"
+     },
+     "balance_sheet": {
+      "cash": "607.5938",
+      "accounts_receivable": "405.3560",
+      "inventory": "360.4731",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1778.2953",
+      "total_assets": "3181.7182",
+      "accounts_payable": "277.2870",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "160.0000",
+      "total_liabilities": "497.2870",
+      "common_stock": "300.0000",
+      "retained_earnings": "2384.4312",
+      "total_equity": "2684.4312"
+     },
+     "cash_flow": {
+      "beginning_cash": "512.9113",
+      "net_income": "523.8751",
+      "depreciation": "159.4679",
+      "change_in_receivables": "-40.1704",
+      "change_in_inventory": "-35.7226",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "27.4789",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "634.9289",
+      "capex": "-343.0839",
+      "investing_cash_flow": "-343.0839",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-157.1625",
+      "financing_cash_flow": "-197.1625",
+      "net_change_in_cash": "94.6825",
+      "ending_cash": "607.5938"
+     }
+    },
+    {
+     "year": 2029,
+     "income_statement": {
+      "revenue": "4760.2893",
+      "cogs": "2808.5707",
+      "gross_profit": "1951.7186",
+      "sga": "999.6608",
+      "depreciation": "177.8295",
+      "ebit": "774.2283",
+      "interest_expense": "-4.1519",
+      "pre_tax_income": "778.3802",
+      "tax_expense": "194.5951",
+      "net_income": "583.7852"
+     },
+     "balance_sheet": {
+      "cash": "719.5101",
+      "accounts_receivable": "449.9452",
+      "inventory": "400.1251",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1981.2889",
+      "total_assets": "3580.8694",
+      "accounts_payable": "307.7886",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "120.0000",
+      "total_liabilities": "487.7886",
+      "common_stock": "300.0000",
+      "retained_earnings": "2793.0808",
+      "total_equity": "3093.0808"
+     },
+     "cash_flow": {
+      "beginning_cash": "607.5938",
+      "net_income": "583.7852",
+      "depreciation": "177.8295",
+      "change_in_receivables": "-44.5892",
+      "change_in_inventory": "-39.6520",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "30.5016",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "707.8751",
+      "capex": "-380.8231",
+      "investing_cash_flow": "-380.8231",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-175.1355",
+      "financing_cash_flow": "-215.1355",
+      "net_change_in_cash": "111.9164",
+      "ending_cash": "719.5101"
+     }
+    }
+   ],
+   "flags": [],
+   "trace": {
+    "revenue@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "2825.0000"
+    },
+    "cash@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "278.0000"
+    },
+    "accounts_receivable@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "282.0000"
+    },
+    "inventory@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "255.0000"
+    },
+    "other_current_assets@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "30.0000"
+    },
+    "ppe@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "1141.0000"
+    },
+    "accounts_payable@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "176.0000"
+    },
+    "other_current_liabilities@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "60.0000"
+    },
+    "revolver@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "0.0000"
+    },
+    "term_loan@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "320.0000"
+    },
+    "retained_earnings@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "1130.0000"
+    },
+    "net_working_capital@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "331.0000"
+    },
+    "revenue@1": {
+     "formula": "revenue@0 \u00d7 (1 + 0.11)",
+     "inputs": {
+      "revenue@0": "2825.0000"
+     },
+     "value": "3135.7500"
+    },
+    "other_current_assets@1": {
+     "formula": "other_current_assets@0 (held flat)",
+     "inputs": {
+      "other_current_assets@0": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "depreciation@1": {
+     "formula": "ppe@0 \u00d7 0.10",
+     "inputs": {
+      "ppe@0": "1141.0000"
+     },
+     "value": "114.1000"
+    },
+    "other_current_liabilities@1": {
+     "formula": "other_current_liabilities@0 (held flat)",
+     "inputs": {
+      "other_current_liabilities@0": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "interest_expense@1": {
+     "formula": "term_loan@0 \u00d7 0.05 + revolver@0 \u00d7 0.07 - cash@0 \u00d7 0.02",
+     "inputs": {
+      "term_loan@0": "320.0000",
+      "revolver@0": "0.0000",
+      "cash@0": "278.0000"
+     },
+     "value": "10.4400"
+    },
+    "term_loan_repayment@1": {
+     "formula": "min(term_loan@0, 40)",
+     "inputs": {
+      "term_loan@0": "320.0000"
+     },
+     "value": "40.0000"
+    },
+    "cogs@1": {
+     "formula": "revenue@1 \u00d7 0.59",
+     "inputs": {
+      "revenue@1": "3135.7500"
+     },
+     "value": "1850.0925"
+    },
+    "sga@1": {
+     "formula": "revenue@1 \u00d7 0.21",
+     "inputs": {
+      "revenue@1": "3135.7500"
+     },
+     "value": "658.5075"
+    },
+    "capex@1": {
+     "formula": "revenue@1 \u00d7 0.08",
+     "inputs": {
+      "revenue@1": "3135.7500"
+     },
+     "value": "250.8600"
+    },
+    "accounts_receivable@1": {
+     "formula": "revenue@1 \u00d7 34.5 / 365",
+     "inputs": {
+      "revenue@1": "3135.7500"
+     },
+     "value": "296.3928"
+    },
+    "revenue@2": {
+     "formula": "revenue@1 \u00d7 (1 + 0.11)",
+     "inputs": {
+      "revenue@1": "3135.7500"
+     },
+     "value": "3480.6825"
+    },
+    "other_current_assets@2": {
+     "formula": "other_current_assets@1 (held flat)",
+     "inputs": {
+      "other_current_assets@1": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@2": {
+     "formula": "other_current_liabilities@1 (held flat)",
+     "inputs": {
+      "other_current_liabilities@1": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan@1": {
+     "formula": "term_loan@0 - term_loan_repayment@1",
+     "inputs": {
+      "term_loan@0": "320.0000",
+      "term_loan_repayment@1": "40.0000"
+     },
+     "value": "280.0000"
+    },
+    "inventory@1": {
+     "formula": "cogs@1 \u00d7 52 / 365",
+     "inputs": {
+      "cogs@1": "1850.0925"
+     },
+     "value": "263.5748"
+    },
+    "accounts_payable@1": {
+     "formula": "cogs@1 \u00d7 40 / 365",
+     "inputs": {
+      "cogs@1": "1850.0925"
+     },
+     "value": "202.7499"
+    },
+    "pre_tax_income@1": {
+     "formula": "revenue@1 - cogs@1 - sga@1 - depreciation@1 - interest_expense@1",
+     "inputs": {
+      "revenue@1": "3135.7500",
+      "cogs@1": "1850.0925",
+      "sga@1": "658.5075",
+      "depreciation@1": "114.1000",
+      "interest_expense@1": "10.4400"
+     },
+     "value": "502.6100"
+    },
+    "ppe@1": {
+     "formula": "ppe@0 + capex@1 - depreciation@1",
+     "inputs": {
+      "ppe@0": "1141.0000",
+      "capex@1": "250.8600",
+      "depreciation@1": "114.1000"
+     },
+     "value": "1277.7600"
+    },
+    "cogs@2": {
+     "formula": "revenue@2 \u00d7 0.59",
+     "inputs": {
+      "revenue@2": "3480.6825"
+     },
+     "value": "2053.6027"
+    },
+    "sga@2": {
+     "formula": "revenue@2 \u00d7 0.21",
+     "inputs": {
+      "revenue@2": "3480.6825"
+     },
+     "value": "730.9433"
+    },
+    "capex@2": {
+     "formula": "revenue@2 \u00d7 0.08",
+     "inputs": {
+      "revenue@2": "3480.6825"
+     },
+     "value": "278.4546"
+    },
+    "accounts_receivable@2": {
+     "formula": "revenue@2 \u00d7 34.5 / 365",
+     "inputs": {
+      "revenue@2": "3480.6825"
+     },
+     "value": "328.9960"
+    },
+    "revenue@3": {
+     "formula": "revenue@2 \u00d7 (1 + 0.11)",
+     "inputs": {
+      "revenue@2": "3480.6825"
+     },
+     "value": "3863.5576"
+    },
+    "other_current_assets@3": {
+     "formula": "other_current_assets@2 (held flat)",
+     "inputs": {
+      "other_current_assets@2": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@3": {
+     "formula": "other_current_liabilities@2 (held flat)",
+     "inputs": {
+      "other_current_liabilities@2": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan_repayment@2": {
+     "formula": "min(term_loan@1, 40)",
+     "inputs": {
+      "term_loan@1": "280.0000"
+     },
+     "value": "40.0000"
+    },
+    "net_working_capital@1": {
+     "formula": "accounts_receivable@1 + inventory@1 + other_current_assets@1 - accounts_payable@1 - other_current_liabilities@1",
+     "inputs": {
+      "accounts_receivable@1": "296.3928",
+      "inventory@1": "263.5748",
+      "other_current_assets@1": "30.0000",
+      "accounts_payable@1": "202.7499",
+      "other_current_liabilities@1": "60.0000"
+     },
+     "value": "327.2178"
+    },
+    "tax_expense@1": {
+     "formula": "max(0, pre_tax_income@1) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@1": "502.6100"
+     },
+     "value": "125.6525"
+    },
+    "depreciation@2": {
+     "formula": "ppe@1 \u00d7 0.10",
+     "inputs": {
+      "ppe@1": "1277.7600"
+     },
+     "value": "127.7760"
+    },
+    "inventory@2": {
+     "formula": "cogs@2 \u00d7 52 / 365",
+     "inputs": {
+      "cogs@2": "2053.6027"
+     },
+     "value": "292.5681"
+    },
+    "accounts_payable@2": {
+     "formula": "cogs@2 \u00d7 40 / 365",
+     "inputs": {
+      "cogs@2": "2053.6027"
+     },
+     "value": "225.0523"
+    },
+    "cogs@3": {
+     "formula": "revenue@3 \u00d7 0.59",
+     "inputs": {
+      "revenue@3": "3863.5576"
+     },
+     "value": "2279.4990"
+    },
+    "sga@3": {
+     "formula": "revenue@3 \u00d7 0.21",
+     "inputs": {
+      "revenue@3": "3863.5576"
+     },
+     "value": "811.3471"
+    },
+    "capex@3": {
+     "formula": "revenue@3 \u00d7 0.08",
+     "inputs": {
+      "revenue@3": "3863.5576"
+     },
+     "value": "309.0846"
+    },
+    "accounts_receivable@3": {
+     "formula": "revenue@3 \u00d7 34.5 / 365",
+     "inputs": {
+      "revenue@3": "3863.5576"
+     },
+     "value": "365.1856"
+    },
+    "revenue@4": {
+     "formula": "revenue@3 \u00d7 (1 + 0.11)",
+     "inputs": {
+      "revenue@3": "3863.5576"
+     },
+     "value": "4288.5489"
+    },
+    "other_current_assets@4": {
+     "formula": "other_current_assets@3 (held flat)",
+     "inputs": {
+      "other_current_assets@3": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@4": {
+     "formula": "other_current_liabilities@3 (held flat)",
+     "inputs": {
+      "other_current_liabilities@3": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan@2": {
+     "formula": "term_loan@1 - term_loan_repayment@2",
+     "inputs": {
+      "term_loan@1": "280.0000",
+      "term_loan_repayment@2": "40.0000"
+     },
+     "value": "240.0000"
+    },
+    "nwc_change@1": {
+     "formula": "net_working_capital@1 - net_working_capital@0",
+     "inputs": {
+      "net_working_capital@1": "327.2178",
+      "net_working_capital@0": "331.0000"
+     },
+     "value": "-3.7822"
+    },
+    "net_income@1": {
+     "formula": "pre_tax_income@1 - tax_expense@1",
+     "inputs": {
+      "pre_tax_income@1": "502.6100",
+      "tax_expense@1": "125.6525"
+     },
+     "value": "376.9575"
+    },
+    "ppe@2": {
+     "formula": "ppe@1 + capex@2 - depreciation@2",
+     "inputs": {
+      "ppe@1": "1277.7600",
+      "capex@2": "278.4546",
+      "depreciation@2": "127.7760"
+     },
+     "value": "1428.4386"
+    },
+    "net_working_capital@2": {
+     "formula": "accounts_receivable@2 + inventory@2 + other_current_assets@2 - accounts_payable@2 - other_current_liabilities@2",
+     "inputs": {
+      "accounts_receivable@2": "328.9960",
+      "inventory@2": "292.5681",
+      "other_current_assets@2": "30.0000",
+      "accounts_payable@2": "225.0523",
+      "other_current_liabilities@2": "60.0000"
+     },
+     "value": "366.5117"
+    },
+    "inventory@3": {
+     "formula": "cogs@3 \u00d7 52 / 365",
+     "inputs": {
+      "cogs@3": "2279.4990"
+     },
+     "value": "324.7505"
+    },
+    "accounts_payable@3": {
+     "formula": "cogs@3 \u00d7 40 / 365",
+     "inputs": {
+      "cogs@3": "2279.4990"
+     },
+     "value": "249.8081"
+    },
+    "cogs@4": {
+     "formula": "revenue@4 \u00d7 0.59",
+     "inputs": {
+      "revenue@4": "4288.5489"
+     },
+     "value": "2530.2439"
+    },
+    "sga@4": {
+     "formula": "revenue@4 \u00d7 0.21",
+     "inputs": {
+      "revenue@4": "4288.5489"
+     },
+     "value": "900.5953"
+    },
+    "capex@4": {
+     "formula": "revenue@4 \u00d7 0.08",
+     "inputs": {
+      "revenue@4": "4288.5489"
+     },
+     "value": "343.0839"
+    },
+    "accounts_receivable@4": {
+     "formula": "revenue@4 \u00d7 34.5 / 365",
+     "inputs": {
+      "revenue@4": "4288.5489"
+     },
+     "value": "405.3560"
+    },
+    "revenue@5": {
+     "formula": "revenue@4 \u00d7 (1 + 0.11)",
+     "inputs": {
+      "revenue@4": "4288.5489"
+     },
+     "value": "4760.2893"
+    },
+    "other_current_assets@5": {
+     "formula": "other_current_assets@4 (held flat)",
+     "inputs": {
+      "other_current_assets@4": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@5": {
+     "formula": "other_current_liabilities@4 (held flat)",
+     "inputs": {
+      "other_current_liabilities@4": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan_repayment@3": {
+     "formula": "min(term_loan@2, 40)",
+     "inputs": {
+      "term_loan@2": "240.0000"
+     },
+     "value": "40.0000"
+    },
+    "dividends@1": {
+     "formula": "max(0, net_income@1) \u00d7 0.30",
+     "inputs": {
+      "net_income@1": "376.9575"
+     },
+     "value": "113.0872"
+    },
+    "depreciation@3": {
+     "formula": "ppe@2 \u00d7 0.10",
+     "inputs": {
+      "ppe@2": "1428.4386"
+     },
+     "value": "142.8439"
+    },
+    "nwc_change@2": {
+     "formula": "net_working_capital@2 - net_working_capital@1",
+     "inputs": {
+      "net_working_capital@2": "366.5117",
+      "net_working_capital@1": "327.2178"
+     },
+     "value": "39.2940"
+    },
+    "net_working_capital@3": {
+     "formula": "accounts_receivable@3 + inventory@3 + other_current_assets@3 - accounts_payable@3 - other_current_liabilities@3",
+     "inputs": {
+      "accounts_receivable@3": "365.1856",
+      "inventory@3": "324.7505",
+      "other_current_assets@3": "30.0000",
+      "accounts_payable@3": "249.8081",
+      "other_current_liabilities@3": "60.0000"
+     },
+     "value": "410.1280"
+    },
+    "inventory@4": {
+     "formula": "cogs@4 \u00d7 52 / 365",
+     "inputs": {
+      "cogs@4": "2530.2439"
+     },
+     "value": "360.4731"
+    },
+    "accounts_payable@4": {
+     "formula": "cogs@4 \u00d7 40 / 365",
+     "inputs": {
+      "cogs@4": "2530.2439"
+     },
+     "value": "277.2870"
+    },
+    "cogs@5": {
+     "formula": "revenue@5 \u00d7 0.59",
+     "inputs": {
+      "revenue@5": "4760.2893"
+     },
+     "value": "2808.5707"
+    },
+    "sga@5": {
+     "formula": "revenue@5 \u00d7 0.21",
+     "inputs": {
+      "revenue@5": "4760.2893"
+     },
+     "value": "999.6608"
+    },
+    "capex@5": {
+     "formula": "revenue@5 \u00d7 0.08",
+     "inputs": {
+      "revenue@5": "4760.2893"
+     },
+     "value": "380.8231"
+    },
+    "accounts_receivable@5": {
+     "formula": "revenue@5 \u00d7 34.5 / 365",
+     "inputs": {
+      "revenue@5": "4760.2893"
+     },
+     "value": "449.9452"
+    },
+    "term_loan@3": {
+     "formula": "term_loan@2 - term_loan_repayment@3",
+     "inputs": {
+      "term_loan@2": "240.0000",
+      "term_loan_repayment@3": "40.0000"
+     },
+     "value": "200.0000"
+    },
+    "cash_before_revolver@1": {
+     "formula": "cash@0 + net_income@1 + depreciation@1 - nwc_change@1 - capex@1 - term_loan_repayment@1 - dividends@1",
+     "inputs": {
+      "cash@0": "278.0000",
+      "net_income@1": "376.9575",
+      "depreciation@1": "114.1000",
+      "nwc_change@1": "-3.7822",
+      "capex@1": "250.8600",
+      "term_loan_repayment@1": "40.0000",
+      "dividends@1": "113.0872"
+     },
+     "value": "368.8925"
+    },
+    "retained_earnings@1": {
+     "formula": "retained_earnings@0 + net_income@1 - dividends@1",
+     "inputs": {
+      "retained_earnings@0": "1130.0000",
+      "net_income@1": "376.9575",
+      "dividends@1": "113.0872"
+     },
+     "value": "1393.8702"
+    },
+    "ppe@3": {
+     "formula": "ppe@2 + capex@3 - depreciation@3",
+     "inputs": {
+      "ppe@2": "1428.4386",
+      "capex@3": "309.0846",
+      "depreciation@3": "142.8439"
+     },
+     "value": "1594.6793"
+    },
+    "nwc_change@3": {
+     "formula": "net_working_capital@3 - net_working_capital@2",
+     "inputs": {
+      "net_working_capital@3": "410.1280",
+      "net_working_capital@2": "366.5117"
+     },
+     "value": "43.6163"
+    },
+    "net_working_capital@4": {
+     "formula": "accounts_receivable@4 + inventory@4 + other_current_assets@4 - accounts_payable@4 - other_current_liabilities@4",
+     "inputs": {
+      "accounts_receivable@4": "405.3560",
+      "inventory@4": "360.4731",
+      "other_current_assets@4": "30.0000",
+      "accounts_payable@4": "277.2870",
+      "other_current_liabilities@4": "60.0000"
+     },
+     "value": "458.5421"
+    },
+    "inventory@5": {
+     "formula": "cogs@5 \u00d7 52 / 365",
+     "inputs": {
+      "cogs@5": "2808.5707"
+     },
+     "value": "400.1251"
+    },
+    "accounts_payable@5": {
+     "formula": "cogs@5 \u00d7 40 / 365",
+     "inputs": {
+      "cogs@5": "2808.5707"
+     },
+     "value": "307.7886"
+    },
+    "term_loan_repayment@4": {
+     "formula": "min(term_loan@3, 40)",
+     "inputs": {
+      "term_loan@3": "200.0000"
+     },
+     "value": "40.0000"
+    },
+    "revolver_draw@1": {
+     "formula": "min(max(0, 150 - cash_before_revolver@1), max(0, 300 - revolver@0))",
+     "inputs": {
+      "cash_before_revolver@1": "368.8925",
+      "revolver@0": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@1": {
+     "formula": "min(revolver@0, max(0, cash_before_revolver@1 - 150))",
+     "inputs": {
+      "cash_before_revolver@1": "368.8925",
+      "revolver@0": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "depreciation@4": {
+     "formula": "ppe@3 \u00d7 0.10",
+     "inputs": {
+      "ppe@3": "1594.6793"
+     },
+     "value": "159.4679"
+    },
+    "nwc_change@4": {
+     "formula": "net_working_capital@4 - net_working_capital@3",
+     "inputs": {
+      "net_working_capital@4": "458.5421",
+      "net_working_capital@3": "410.1280"
+     },
+     "value": "48.4141"
+    },
+    "net_working_capital@5": {
+     "formula": "accounts_receivable@5 + inventory@5 + other_current_assets@5 - accounts_payable@5 - other_current_liabilities@5",
+     "inputs": {
+      "accounts_receivable@5": "449.9452",
+      "inventory@5": "400.1251",
+      "other_current_assets@5": "30.0000",
+      "accounts_payable@5": "307.7886",
+      "other_current_liabilities@5": "60.0000"
+     },
+     "value": "512.2817"
+    },
+    "term_loan@4": {
+     "formula": "term_loan@3 - term_loan_repayment@4",
+     "inputs": {
+      "term_loan@3": "200.0000",
+      "term_loan_repayment@4": "40.0000"
+     },
+     "value": "160.0000"
+    },
+    "unfunded_shortfall@1": {
+     "formula": "max(0, 150 - cash_before_revolver@1) - revolver_draw@1",
+     "inputs": {
+      "cash_before_revolver@1": "368.8925",
+      "revolver_draw@1": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@1": {
+     "formula": "revolver@0 + revolver_draw@1 - revolver_repayment@1",
+     "inputs": {
+      "revolver@0": "0.0000",
+      "revolver_draw@1": "0.0000",
+      "revolver_repayment@1": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@1": {
+     "formula": "cash_before_revolver@1 + revolver_draw@1 - revolver_repayment@1",
+     "inputs": {
+      "cash_before_revolver@1": "368.8925",
+      "revolver_draw@1": "0.0000",
+      "revolver_repayment@1": "0.0000"
+     },
+     "value": "368.8925"
+    },
+    "ppe@4": {
+     "formula": "ppe@3 + capex@4 - depreciation@4",
+     "inputs": {
+      "ppe@3": "1594.6793",
+      "capex@4": "343.0839",
+      "depreciation@4": "159.4679"
+     },
+     "value": "1778.2953"
+    },
+    "nwc_change@5": {
+     "formula": "net_working_capital@5 - net_working_capital@4",
+     "inputs": {
+      "net_working_capital@5": "512.2817",
+      "net_working_capital@4": "458.5421"
+     },
+     "value": "53.7396"
+    },
+    "term_loan_repayment@5": {
+     "formula": "min(term_loan@4, 40)",
+     "inputs": {
+      "term_loan@4": "160.0000"
+     },
+     "value": "40.0000"
+    },
+    "interest_expense@2": {
+     "formula": "term_loan@1 \u00d7 0.05 + revolver@1 \u00d7 0.07 - cash@1 \u00d7 0.02",
+     "inputs": {
+      "term_loan@1": "280.0000",
+      "revolver@1": "0.0000",
+      "cash@1": "368.8925"
+     },
+     "value": "6.6222"
+    },
+    "depreciation@5": {
+     "formula": "ppe@4 \u00d7 0.10",
+     "inputs": {
+      "ppe@4": "1778.2953"
+     },
+     "value": "177.8295"
+    },
+    "term_loan@5": {
+     "formula": "term_loan@4 - term_loan_repayment@5",
+     "inputs": {
+      "term_loan@4": "160.0000",
+      "term_loan_repayment@5": "40.0000"
+     },
+     "value": "120.0000"
+    },
+    "pre_tax_income@2": {
+     "formula": "revenue@2 - cogs@2 - sga@2 - depreciation@2 - interest_expense@2",
+     "inputs": {
+      "revenue@2": "3480.6825",
+      "cogs@2": "2053.6027",
+      "sga@2": "730.9433",
+      "depreciation@2": "127.7760",
+      "interest_expense@2": "6.6222"
+     },
+     "value": "561.7383"
+    },
+    "ppe@5": {
+     "formula": "ppe@4 + capex@5 - depreciation@5",
+     "inputs": {
+      "ppe@4": "1778.2953",
+      "capex@5": "380.8231",
+      "depreciation@5": "177.8295"
+     },
+     "value": "1981.2889"
+    },
+    "tax_expense@2": {
+     "formula": "max(0, pre_tax_income@2) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@2": "561.7383"
+     },
+     "value": "140.4346"
+    },
+    "net_income@2": {
+     "formula": "pre_tax_income@2 - tax_expense@2",
+     "inputs": {
+      "pre_tax_income@2": "561.7383",
+      "tax_expense@2": "140.4346"
+     },
+     "value": "421.3038"
+    },
+    "dividends@2": {
+     "formula": "max(0, net_income@2) \u00d7 0.30",
+     "inputs": {
+      "net_income@2": "421.3038"
+     },
+     "value": "126.3911"
+    },
+    "cash_before_revolver@2": {
+     "formula": "cash@1 + net_income@2 + depreciation@2 - nwc_change@2 - capex@2 - term_loan_repayment@2 - dividends@2",
+     "inputs": {
+      "cash@1": "368.8925",
+      "net_income@2": "421.3038",
+      "depreciation@2": "127.7760",
+      "nwc_change@2": "39.2940",
+      "capex@2": "278.4546",
+      "term_loan_repayment@2": "40.0000",
+      "dividends@2": "126.3911"
+     },
+     "value": "433.8326"
+    },
+    "retained_earnings@2": {
+     "formula": "retained_earnings@1 + net_income@2 - dividends@2",
+     "inputs": {
+      "retained_earnings@1": "1393.8702",
+      "net_income@2": "421.3038",
+      "dividends@2": "126.3911"
+     },
+     "value": "1688.7829"
+    },
+    "revolver_draw@2": {
+     "formula": "min(max(0, 150 - cash_before_revolver@2), max(0, 300 - revolver@1))",
+     "inputs": {
+      "cash_before_revolver@2": "433.8326",
+      "revolver@1": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@2": {
+     "formula": "min(revolver@1, max(0, cash_before_revolver@2 - 150))",
+     "inputs": {
+      "cash_before_revolver@2": "433.8326",
+      "revolver@1": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@2": {
+     "formula": "max(0, 150 - cash_before_revolver@2) - revolver_draw@2",
+     "inputs": {
+      "cash_before_revolver@2": "433.8326",
+      "revolver_draw@2": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@2": {
+     "formula": "revolver@1 + revolver_draw@2 - revolver_repayment@2",
+     "inputs": {
+      "revolver@1": "0.0000",
+      "revolver_draw@2": "0.0000",
+      "revolver_repayment@2": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@2": {
+     "formula": "cash_before_revolver@2 + revolver_draw@2 - revolver_repayment@2",
+     "inputs": {
+      "cash_before_revolver@2": "433.8326",
+      "revolver_draw@2": "0.0000",
+      "revolver_repayment@2": "0.0000"
+     },
+     "value": "433.8326"
+    },
+    "interest_expense@3": {
+     "formula": "term_loan@2 \u00d7 0.05 + revolver@2 \u00d7 0.07 - cash@2 \u00d7 0.02",
+     "inputs": {
+      "term_loan@2": "240.0000",
+      "revolver@2": "0.0000",
+      "cash@2": "433.8326"
+     },
+     "value": "3.3233"
+    },
+    "pre_tax_income@3": {
+     "formula": "revenue@3 - cogs@3 - sga@3 - depreciation@3 - interest_expense@3",
+     "inputs": {
+      "revenue@3": "3863.5576",
+      "cogs@3": "2279.4990",
+      "sga@3": "811.3471",
+      "depreciation@3": "142.8439",
+      "interest_expense@3": "3.3233"
+     },
+     "value": "626.5443"
+    },
+    "tax_expense@3": {
+     "formula": "max(0, pre_tax_income@3) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@3": "626.5443"
+     },
+     "value": "156.6361"
+    },
+    "net_income@3": {
+     "formula": "pre_tax_income@3 - tax_expense@3",
+     "inputs": {
+      "pre_tax_income@3": "626.5443",
+      "tax_expense@3": "156.6361"
+     },
+     "value": "469.9082"
+    },
+    "dividends@3": {
+     "formula": "max(0, net_income@3) \u00d7 0.30",
+     "inputs": {
+      "net_income@3": "469.9082"
+     },
+     "value": "140.9725"
+    },
+    "cash_before_revolver@3": {
+     "formula": "cash@2 + net_income@3 + depreciation@3 - nwc_change@3 - capex@3 - term_loan_repayment@3 - dividends@3",
+     "inputs": {
+      "cash@2": "433.8326",
+      "net_income@3": "469.9082",
+      "depreciation@3": "142.8439",
+      "nwc_change@3": "43.6163",
+      "capex@3": "309.0846",
+      "term_loan_repayment@3": "40.0000",
+      "dividends@3": "140.9725"
+     },
+     "value": "512.9113"
+    },
+    "retained_earnings@3": {
+     "formula": "retained_earnings@2 + net_income@3 - dividends@3",
+     "inputs": {
+      "retained_earnings@2": "1688.7829",
+      "net_income@3": "469.9082",
+      "dividends@3": "140.9725"
+     },
+     "value": "2017.7186"
+    },
+    "revolver_draw@3": {
+     "formula": "min(max(0, 150 - cash_before_revolver@3), max(0, 300 - revolver@2))",
+     "inputs": {
+      "cash_before_revolver@3": "512.9113",
+      "revolver@2": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@3": {
+     "formula": "min(revolver@2, max(0, cash_before_revolver@3 - 150))",
+     "inputs": {
+      "cash_before_revolver@3": "512.9113",
+      "revolver@2": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@3": {
+     "formula": "max(0, 150 - cash_before_revolver@3) - revolver_draw@3",
+     "inputs": {
+      "cash_before_revolver@3": "512.9113",
+      "revolver_draw@3": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@3": {
+     "formula": "revolver@2 + revolver_draw@3 - revolver_repayment@3",
+     "inputs": {
+      "revolver@2": "0.0000",
+      "revolver_draw@3": "0.0000",
+      "revolver_repayment@3": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@3": {
+     "formula": "cash_before_revolver@3 + revolver_draw@3 - revolver_repayment@3",
+     "inputs": {
+      "cash_before_revolver@3": "512.9113",
+      "revolver_draw@3": "0.0000",
+      "revolver_repayment@3": "0.0000"
+     },
+     "value": "512.9113"
+    },
+    "interest_expense@4": {
+     "formula": "term_loan@3 \u00d7 0.05 + revolver@3 \u00d7 0.07 - cash@3 \u00d7 0.02",
+     "inputs": {
+      "term_loan@3": "200.0000",
+      "revolver@3": "0.0000",
+      "cash@3": "512.9113"
+     },
+     "value": "-0.2582"
+    },
+    "pre_tax_income@4": {
+     "formula": "revenue@4 - cogs@4 - sga@4 - depreciation@4 - interest_expense@4",
+     "inputs": {
+      "revenue@4": "4288.5489",
+      "cogs@4": "2530.2439",
+      "sga@4": "900.5953",
+      "depreciation@4": "159.4679",
+      "interest_expense@4": "-0.2582"
+     },
+     "value": "698.5001"
+    },
+    "tax_expense@4": {
+     "formula": "max(0, pre_tax_income@4) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@4": "698.5001"
+     },
+     "value": "174.6250"
+    },
+    "net_income@4": {
+     "formula": "pre_tax_income@4 - tax_expense@4",
+     "inputs": {
+      "pre_tax_income@4": "698.5001",
+      "tax_expense@4": "174.6250"
+     },
+     "value": "523.8751"
+    },
+    "dividends@4": {
+     "formula": "max(0, net_income@4) \u00d7 0.30",
+     "inputs": {
+      "net_income@4": "523.8751"
+     },
+     "value": "157.1625"
+    },
+    "cash_before_revolver@4": {
+     "formula": "cash@3 + net_income@4 + depreciation@4 - nwc_change@4 - capex@4 - term_loan_repayment@4 - dividends@4",
+     "inputs": {
+      "cash@3": "512.9113",
+      "net_income@4": "523.8751",
+      "depreciation@4": "159.4679",
+      "nwc_change@4": "48.4141",
+      "capex@4": "343.0839",
+      "term_loan_repayment@4": "40.0000",
+      "dividends@4": "157.1625"
+     },
+     "value": "607.5938"
+    },
+    "retained_earnings@4": {
+     "formula": "retained_earnings@3 + net_income@4 - dividends@4",
+     "inputs": {
+      "retained_earnings@3": "2017.7186",
+      "net_income@4": "523.8751",
+      "dividends@4": "157.1625"
+     },
+     "value": "2384.4312"
+    },
+    "revolver_draw@4": {
+     "formula": "min(max(0, 150 - cash_before_revolver@4), max(0, 300 - revolver@3))",
+     "inputs": {
+      "cash_before_revolver@4": "607.5938",
+      "revolver@3": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@4": {
+     "formula": "min(revolver@3, max(0, cash_before_revolver@4 - 150))",
+     "inputs": {
+      "cash_before_revolver@4": "607.5938",
+      "revolver@3": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@4": {
+     "formula": "max(0, 150 - cash_before_revolver@4) - revolver_draw@4",
+     "inputs": {
+      "cash_before_revolver@4": "607.5938",
+      "revolver_draw@4": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@4": {
+     "formula": "revolver@3 + revolver_draw@4 - revolver_repayment@4",
+     "inputs": {
+      "revolver@3": "0.0000",
+      "revolver_draw@4": "0.0000",
+      "revolver_repayment@4": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@4": {
+     "formula": "cash_before_revolver@4 + revolver_draw@4 - revolver_repayment@4",
+     "inputs": {
+      "cash_before_revolver@4": "607.5938",
+      "revolver_draw@4": "0.0000",
+      "revolver_repayment@4": "0.0000"
+     },
+     "value": "607.5938"
+    },
+    "interest_expense@5": {
+     "formula": "term_loan@4 \u00d7 0.05 + revolver@4 \u00d7 0.07 - cash@4 \u00d7 0.02",
+     "inputs": {
+      "term_loan@4": "160.0000",
+      "revolver@4": "0.0000",
+      "cash@4": "607.5938"
+     },
+     "value": "-4.1519"
+    },
+    "pre_tax_income@5": {
+     "formula": "revenue@5 - cogs@5 - sga@5 - depreciation@5 - interest_expense@5",
+     "inputs": {
+      "revenue@5": "4760.2893",
+      "cogs@5": "2808.5707",
+      "sga@5": "999.6608",
+      "depreciation@5": "177.8295",
+      "interest_expense@5": "-4.1519"
+     },
+     "value": "778.3802"
+    },
+    "tax_expense@5": {
+     "formula": "max(0, pre_tax_income@5) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@5": "778.3802"
+     },
+     "value": "194.5951"
+    },
+    "net_income@5": {
+     "formula": "pre_tax_income@5 - tax_expense@5",
+     "inputs": {
+      "pre_tax_income@5": "778.3802",
+      "tax_expense@5": "194.5951"
+     },
+     "value": "583.7852"
+    },
+    "dividends@5": {
+     "formula": "max(0, net_income@5) \u00d7 0.30",
+     "inputs": {
+      "net_income@5": "583.7852"
+     },
+     "value": "175.1355"
+    },
+    "cash_before_revolver@5": {
+     "formula": "cash@4 + net_income@5 + depreciation@5 - nwc_change@5 - capex@5 - term_loan_repayment@5 - dividends@5",
+     "inputs": {
+      "cash@4": "607.5938",
+      "net_income@5": "583.7852",
+      "depreciation@5": "177.8295",
+      "nwc_change@5": "53.7396",
+      "capex@5": "380.8231",
+      "term_loan_repayment@5": "40.0000",
+      "dividends@5": "175.1355"
+     },
+     "value": "719.5101"
+    },
+    "retained_earnings@5": {
+     "formula": "retained_earnings@4 + net_income@5 - dividends@5",
+     "inputs": {
+      "retained_earnings@4": "2384.4312",
+      "net_income@5": "583.7852",
+      "dividends@5": "175.1355"
+     },
+     "value": "2793.0808"
+    },
+    "revolver_draw@5": {
+     "formula": "min(max(0, 150 - cash_before_revolver@5), max(0, 300 - revolver@4))",
+     "inputs": {
+      "cash_before_revolver@5": "719.5101",
+      "revolver@4": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@5": {
+     "formula": "min(revolver@4, max(0, cash_before_revolver@5 - 150))",
+     "inputs": {
+      "cash_before_revolver@5": "719.5101",
+      "revolver@4": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@5": {
+     "formula": "max(0, 150 - cash_before_revolver@5) - revolver_draw@5",
+     "inputs": {
+      "cash_before_revolver@5": "719.5101",
+      "revolver_draw@5": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@5": {
+     "formula": "revolver@4 + revolver_draw@5 - revolver_repayment@5",
+     "inputs": {
+      "revolver@4": "0.0000",
+      "revolver_draw@5": "0.0000",
+      "revolver_repayment@5": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@5": {
+     "formula": "cash_before_revolver@5 + revolver_draw@5 - revolver_repayment@5",
+     "inputs": {
+      "cash_before_revolver@5": "719.5101",
+      "revolver_draw@5": "0.0000",
+      "revolver_repayment@5": "0.0000"
+     },
+     "value": "719.5101"
+    }
+   }
+  },
+  "downside": {
+   "years": [
+    {
+     "year": 2025,
+     "income_statement": {
+      "revenue": "2881.5000",
+      "cogs": "1786.5300",
+      "gross_profit": "1094.9700",
+      "sga": "605.1150",
+      "depreciation": "114.1000",
+      "ebit": "375.7550",
+      "interest_expense": "10.4400",
+      "pre_tax_income": "365.3150",
+      "tax_expense": "91.3288",
+      "net_income": "273.9862"
+     },
+     "balance_sheet": {
+      "cash": "214.5935",
+      "accounts_receivable": "327.6226",
+      "inventory": "293.6762",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1257.4200",
+      "total_assets": "2123.3123",
+      "accounts_payable": "161.5219",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "280.0000",
+      "total_liabilities": "501.5219",
+      "common_stock": "300.0000",
+      "retained_earnings": "1321.7904",
+      "total_equity": "1621.7904"
+     },
+     "cash_flow": {
+      "beginning_cash": "278.0000",
+      "net_income": "273.9862",
+      "depreciation": "114.1000",
+      "change_in_receivables": "-45.6226",
+      "change_in_inventory": "-38.6762",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "-14.4781",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "289.3094",
+      "capex": "-230.5200",
+      "investing_cash_flow": "-230.5200",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-82.1959",
+      "financing_cash_flow": "-122.1959",
+      "net_change_in_cash": "-63.4065",
+      "ending_cash": "214.5935"
+     }
+    },
+    {
+     "year": 2026,
+     "income_statement": {
+      "revenue": "2939.1300",
+      "cogs": "1822.2606",
+      "gross_profit": "1116.8694",
+      "sga": "617.2173",
+      "depreciation": "125.7420",
+      "ebit": "373.9101",
+      "interest_expense": "9.7081",
+      "pre_tax_income": "364.2020",
+      "tax_expense": "91.0505",
+      "net_income": "273.1515"
+     },
+     "balance_sheet": {
+      "cash": "247.2156",
+      "accounts_receivable": "334.1751",
+      "inventory": "299.5497",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1366.8084",
+      "total_assets": "2277.7487",
+      "accounts_payable": "164.7523",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "240.0000",
+      "total_liabilities": "464.7523",
+      "common_stock": "300.0000",
+      "retained_earnings": "1512.9964",
+      "total_equity": "1812.9964"
+     },
+     "cash_flow": {
+      "beginning_cash": "214.5935",
+      "net_income": "273.1515",
+      "depreciation": "125.7420",
+      "change_in_receivables": "-6.5525",
+      "change_in_inventory": "-5.8735",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "3.2304",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "389.6979",
+      "capex": "-235.1304",
+      "investing_cash_flow": "-235.1304",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-81.9454",
+      "financing_cash_flow": "-121.9454",
+      "net_change_in_cash": "32.6221",
+      "ending_cash": "247.2156"
+     }
+    },
+    {
+     "year": 2027,
+     "income_statement": {
+      "revenue": "2997.9126",
+      "cogs": "1858.7058",
+      "gross_profit": "1139.2068",
+      "sga": "629.5616",
+      "depreciation": "136.6808",
+      "ebit": "372.9643",
+      "interest_expense": "7.0557",
+      "pre_tax_income": "365.9086",
+      "tax_expense": "91.4772",
+      "net_income": "274.4315"
+     },
+     "balance_sheet": {
+      "cash": "286.7860",
+      "accounts_receivable": "340.8586",
+      "inventory": "305.5407",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1469.9606",
+      "total_assets": "2433.1458",
+      "accounts_payable": "168.0474",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "200.0000",
+      "total_liabilities": "428.0474",
+      "common_stock": "300.0000",
+      "retained_earnings": "1705.0984",
+      "total_equity": "2005.0984"
+     },
+     "cash_flow": {
+      "beginning_cash": "247.2156",
+      "net_income": "274.4315",
+      "depreciation": "136.6808",
+      "change_in_receivables": "-6.6835",
+      "change_in_inventory": "-5.9910",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "3.2950",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "401.7329",
+      "capex": "-239.8330",
+      "investing_cash_flow": "-239.8330",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-82.3294",
+      "financing_cash_flow": "-122.3294",
+      "net_change_in_cash": "39.5704",
+      "ending_cash": "286.7860"
+     }
+    },
+    {
+     "year": 2028,
+     "income_statement": {
+      "revenue": "3057.8709",
+      "cogs": "1895.8799",
+      "gross_profit": "1161.9909",
+      "sga": "642.1529",
+      "depreciation": "146.9961",
+      "ebit": "372.8420",
+      "interest_expense": "4.2643",
+      "pre_tax_income": "368.5777",
+      "tax_expense": "92.1444",
+      "net_income": "276.4333"
+     },
+     "balance_sheet": {
+      "cash": "333.0886",
+      "accounts_receivable": "347.6757",
+      "inventory": "311.6515",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1567.5942",
+      "total_assets": "2590.0101",
+      "accounts_payable": "171.4083",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "160.0000",
+      "total_liabilities": "391.4083",
+      "common_stock": "300.0000",
+      "retained_earnings": "1898.6017",
+      "total_equity": "2198.6017"
+     },
+     "cash_flow": {
+      "beginning_cash": "286.7860",
+      "net_income": "276.4333",
+      "depreciation": "146.9961",
+      "change_in_receivables": "-6.8172",
+      "change_in_inventory": "-6.1108",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "3.3609",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "413.8623",
+      "capex": "-244.6297",
+      "investing_cash_flow": "-244.6297",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-82.9300",
+      "financing_cash_flow": "-122.9300",
+      "net_change_in_cash": "46.3026",
+      "ending_cash": "333.0886"
+     }
+    },
+    {
+     "year": 2029,
+     "income_statement": {
+      "revenue": "3119.0283",
+      "cogs": "1933.7975",
+      "gross_profit": "1185.2307",
+      "sga": "654.9959",
+      "depreciation": "156.7594",
+      "ebit": "373.4754",
+      "interest_expense": "1.3382",
+      "pre_tax_income": "372.1372",
+      "tax_expense": "93.0343",
+      "net_income": "279.1029"
+     },
+     "balance_sheet": {
+      "cash": "385.9394",
+      "accounts_receivable": "354.6292",
+      "inventory": "317.8845",
+      "other_current_assets": "30.0000",
+      "ppe_net": "1660.3570",
+      "total_assets": "2748.8102",
+      "accounts_payable": "174.8365",
+      "other_current_liabilities": "60.0000",
+      "revolver": "0.0000",
+      "term_loan": "120.0000",
+      "total_liabilities": "354.8365",
+      "common_stock": "300.0000",
+      "retained_earnings": "2093.9737",
+      "total_equity": "2393.9737"
+     },
+     "cash_flow": {
+      "beginning_cash": "333.0886",
+      "net_income": "279.1029",
+      "depreciation": "156.7594",
+      "change_in_receivables": "-6.9535",
+      "change_in_inventory": "-6.2330",
+      "change_in_other_current_assets": "0.0000",
+      "change_in_payables": "3.4282",
+      "change_in_other_current_liabilities": "0.0000",
+      "operating_cash_flow": "426.1039",
+      "capex": "-249.5223",
+      "investing_cash_flow": "-249.5223",
+      "revolver_net_borrowing": "0.0000",
+      "term_loan_repayment": "-40.0000",
+      "dividends": "-83.7309",
+      "financing_cash_flow": "-123.7309",
+      "net_change_in_cash": "52.8508",
+      "ending_cash": "385.9394"
+     }
+    }
+   ],
+   "flags": [],
+   "trace": {
+    "revenue@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "2825.0000"
+    },
+    "cash@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "278.0000"
+    },
+    "accounts_receivable@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "282.0000"
+    },
+    "inventory@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "255.0000"
+    },
+    "other_current_assets@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "30.0000"
+    },
+    "ppe@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "1141.0000"
+    },
+    "accounts_payable@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "176.0000"
+    },
+    "other_current_liabilities@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "60.0000"
+    },
+    "revolver@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "0.0000"
+    },
+    "term_loan@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "320.0000"
+    },
+    "retained_earnings@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "1130.0000"
+    },
+    "net_working_capital@0": {
+     "formula": "last historical year",
+     "inputs": {},
+     "value": "331.0000"
+    },
+    "revenue@1": {
+     "formula": "revenue@0 \u00d7 (1 + 0.02)",
+     "inputs": {
+      "revenue@0": "2825.0000"
+     },
+     "value": "2881.5000"
+    },
+    "other_current_assets@1": {
+     "formula": "other_current_assets@0 (held flat)",
+     "inputs": {
+      "other_current_assets@0": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "depreciation@1": {
+     "formula": "ppe@0 \u00d7 0.10",
+     "inputs": {
+      "ppe@0": "1141.0000"
+     },
+     "value": "114.1000"
+    },
+    "other_current_liabilities@1": {
+     "formula": "other_current_liabilities@0 (held flat)",
+     "inputs": {
+      "other_current_liabilities@0": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "interest_expense@1": {
+     "formula": "term_loan@0 \u00d7 0.05 + revolver@0 \u00d7 0.07 - cash@0 \u00d7 0.02",
+     "inputs": {
+      "term_loan@0": "320.0000",
+      "revolver@0": "0.0000",
+      "cash@0": "278.0000"
+     },
+     "value": "10.4400"
+    },
+    "term_loan_repayment@1": {
+     "formula": "min(term_loan@0, 40)",
+     "inputs": {
+      "term_loan@0": "320.0000"
+     },
+     "value": "40.0000"
+    },
+    "cogs@1": {
+     "formula": "revenue@1 \u00d7 0.62",
+     "inputs": {
+      "revenue@1": "2881.5000"
+     },
+     "value": "1786.5300"
+    },
+    "sga@1": {
+     "formula": "revenue@1 \u00d7 0.21",
+     "inputs": {
+      "revenue@1": "2881.5000"
+     },
+     "value": "605.1150"
+    },
+    "capex@1": {
+     "formula": "revenue@1 \u00d7 0.08",
+     "inputs": {
+      "revenue@1": "2881.5000"
+     },
+     "value": "230.5200"
+    },
+    "accounts_receivable@1": {
+     "formula": "revenue@1 \u00d7 41.5 / 365",
+     "inputs": {
+      "revenue@1": "2881.5000"
+     },
+     "value": "327.6226"
+    },
+    "revenue@2": {
+     "formula": "revenue@1 \u00d7 (1 + 0.02)",
+     "inputs": {
+      "revenue@1": "2881.5000"
+     },
+     "value": "2939.1300"
+    },
+    "other_current_assets@2": {
+     "formula": "other_current_assets@1 (held flat)",
+     "inputs": {
+      "other_current_assets@1": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@2": {
+     "formula": "other_current_liabilities@1 (held flat)",
+     "inputs": {
+      "other_current_liabilities@1": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan@1": {
+     "formula": "term_loan@0 - term_loan_repayment@1",
+     "inputs": {
+      "term_loan@0": "320.0000",
+      "term_loan_repayment@1": "40.0000"
+     },
+     "value": "280.0000"
+    },
+    "inventory@1": {
+     "formula": "cogs@1 \u00d7 60 / 365",
+     "inputs": {
+      "cogs@1": "1786.5300"
+     },
+     "value": "293.6762"
+    },
+    "accounts_payable@1": {
+     "formula": "cogs@1 \u00d7 33 / 365",
+     "inputs": {
+      "cogs@1": "1786.5300"
+     },
+     "value": "161.5219"
+    },
+    "pre_tax_income@1": {
+     "formula": "revenue@1 - cogs@1 - sga@1 - depreciation@1 - interest_expense@1",
+     "inputs": {
+      "revenue@1": "2881.5000",
+      "cogs@1": "1786.5300",
+      "sga@1": "605.1150",
+      "depreciation@1": "114.1000",
+      "interest_expense@1": "10.4400"
+     },
+     "value": "365.3150"
+    },
+    "ppe@1": {
+     "formula": "ppe@0 + capex@1 - depreciation@1",
+     "inputs": {
+      "ppe@0": "1141.0000",
+      "capex@1": "230.5200",
+      "depreciation@1": "114.1000"
+     },
+     "value": "1257.4200"
+    },
+    "cogs@2": {
+     "formula": "revenue@2 \u00d7 0.62",
+     "inputs": {
+      "revenue@2": "2939.1300"
+     },
+     "value": "1822.2606"
+    },
+    "sga@2": {
+     "formula": "revenue@2 \u00d7 0.21",
+     "inputs": {
+      "revenue@2": "2939.1300"
+     },
+     "value": "617.2173"
+    },
+    "capex@2": {
+     "formula": "revenue@2 \u00d7 0.08",
+     "inputs": {
+      "revenue@2": "2939.1300"
+     },
+     "value": "235.1304"
+    },
+    "accounts_receivable@2": {
+     "formula": "revenue@2 \u00d7 41.5 / 365",
+     "inputs": {
+      "revenue@2": "2939.1300"
+     },
+     "value": "334.1751"
+    },
+    "revenue@3": {
+     "formula": "revenue@2 \u00d7 (1 + 0.02)",
+     "inputs": {
+      "revenue@2": "2939.1300"
+     },
+     "value": "2997.9126"
+    },
+    "other_current_assets@3": {
+     "formula": "other_current_assets@2 (held flat)",
+     "inputs": {
+      "other_current_assets@2": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@3": {
+     "formula": "other_current_liabilities@2 (held flat)",
+     "inputs": {
+      "other_current_liabilities@2": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan_repayment@2": {
+     "formula": "min(term_loan@1, 40)",
+     "inputs": {
+      "term_loan@1": "280.0000"
+     },
+     "value": "40.0000"
+    },
+    "net_working_capital@1": {
+     "formula": "accounts_receivable@1 + inventory@1 + other_current_assets@1 - accounts_payable@1 - other_current_liabilities@1",
+     "inputs": {
+      "accounts_receivable@1": "327.6226",
+      "inventory@1": "293.6762",
+      "other_current_assets@1": "30.0000",
+      "accounts_payable@1": "161.5219",
+      "other_current_liabilities@1": "60.0000"
+     },
+     "value": "429.7769"
+    },
+    "tax_expense@1": {
+     "formula": "max(0, pre_tax_income@1) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@1": "365.3150"
+     },
+     "value": "91.3288"
+    },
+    "depreciation@2": {
+     "formula": "ppe@1 \u00d7 0.10",
+     "inputs": {
+      "ppe@1": "1257.4200"
+     },
+     "value": "125.7420"
+    },
+    "inventory@2": {
+     "formula": "cogs@2 \u00d7 60 / 365",
+     "inputs": {
+      "cogs@2": "1822.2606"
+     },
+     "value": "299.5497"
+    },
+    "accounts_payable@2": {
+     "formula": "cogs@2 \u00d7 33 / 365",
+     "inputs": {
+      "cogs@2": "1822.2606"
+     },
+     "value": "164.7523"
+    },
+    "cogs@3": {
+     "formula": "revenue@3 \u00d7 0.62",
+     "inputs": {
+      "revenue@3": "2997.9126"
+     },
+     "value": "1858.7058"
+    },
+    "sga@3": {
+     "formula": "revenue@3 \u00d7 0.21",
+     "inputs": {
+      "revenue@3": "2997.9126"
+     },
+     "value": "629.5616"
+    },
+    "capex@3": {
+     "formula": "revenue@3 \u00d7 0.08",
+     "inputs": {
+      "revenue@3": "2997.9126"
+     },
+     "value": "239.8330"
+    },
+    "accounts_receivable@3": {
+     "formula": "revenue@3 \u00d7 41.5 / 365",
+     "inputs": {
+      "revenue@3": "2997.9126"
+     },
+     "value": "340.8586"
+    },
+    "revenue@4": {
+     "formula": "revenue@3 \u00d7 (1 + 0.02)",
+     "inputs": {
+      "revenue@3": "2997.9126"
+     },
+     "value": "3057.8709"
+    },
+    "other_current_assets@4": {
+     "formula": "other_current_assets@3 (held flat)",
+     "inputs": {
+      "other_current_assets@3": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@4": {
+     "formula": "other_current_liabilities@3 (held flat)",
+     "inputs": {
+      "other_current_liabilities@3": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan@2": {
+     "formula": "term_loan@1 - term_loan_repayment@2",
+     "inputs": {
+      "term_loan@1": "280.0000",
+      "term_loan_repayment@2": "40.0000"
+     },
+     "value": "240.0000"
+    },
+    "nwc_change@1": {
+     "formula": "net_working_capital@1 - net_working_capital@0",
+     "inputs": {
+      "net_working_capital@1": "429.7769",
+      "net_working_capital@0": "331.0000"
+     },
+     "value": "98.7769"
+    },
+    "net_income@1": {
+     "formula": "pre_tax_income@1 - tax_expense@1",
+     "inputs": {
+      "pre_tax_income@1": "365.3150",
+      "tax_expense@1": "91.3288"
+     },
+     "value": "273.9862"
+    },
+    "ppe@2": {
+     "formula": "ppe@1 + capex@2 - depreciation@2",
+     "inputs": {
+      "ppe@1": "1257.4200",
+      "capex@2": "235.1304",
+      "depreciation@2": "125.7420"
+     },
+     "value": "1366.8084"
+    },
+    "net_working_capital@2": {
+     "formula": "accounts_receivable@2 + inventory@2 + other_current_assets@2 - accounts_payable@2 - other_current_liabilities@2",
+     "inputs": {
+      "accounts_receivable@2": "334.1751",
+      "inventory@2": "299.5497",
+      "other_current_assets@2": "30.0000",
+      "accounts_payable@2": "164.7523",
+      "other_current_liabilities@2": "60.0000"
+     },
+     "value": "438.9724"
+    },
+    "inventory@3": {
+     "formula": "cogs@3 \u00d7 60 / 365",
+     "inputs": {
+      "cogs@3": "1858.7058"
+     },
+     "value": "305.5407"
+    },
+    "accounts_payable@3": {
+     "formula": "cogs@3 \u00d7 33 / 365",
+     "inputs": {
+      "cogs@3": "1858.7058"
+     },
+     "value": "168.0474"
+    },
+    "cogs@4": {
+     "formula": "revenue@4 \u00d7 0.62",
+     "inputs": {
+      "revenue@4": "3057.8709"
+     },
+     "value": "1895.8799"
+    },
+    "sga@4": {
+     "formula": "revenue@4 \u00d7 0.21",
+     "inputs": {
+      "revenue@4": "3057.8709"
+     },
+     "value": "642.1529"
+    },
+    "capex@4": {
+     "formula": "revenue@4 \u00d7 0.08",
+     "inputs": {
+      "revenue@4": "3057.8709"
+     },
+     "value": "244.6297"
+    },
+    "accounts_receivable@4": {
+     "formula": "revenue@4 \u00d7 41.5 / 365",
+     "inputs": {
+      "revenue@4": "3057.8709"
+     },
+     "value": "347.6757"
+    },
+    "revenue@5": {
+     "formula": "revenue@4 \u00d7 (1 + 0.02)",
+     "inputs": {
+      "revenue@4": "3057.8709"
+     },
+     "value": "3119.0283"
+    },
+    "other_current_assets@5": {
+     "formula": "other_current_assets@4 (held flat)",
+     "inputs": {
+      "other_current_assets@4": "30.0000"
+     },
+     "value": "30.0000"
+    },
+    "other_current_liabilities@5": {
+     "formula": "other_current_liabilities@4 (held flat)",
+     "inputs": {
+      "other_current_liabilities@4": "60.0000"
+     },
+     "value": "60.0000"
+    },
+    "term_loan_repayment@3": {
+     "formula": "min(term_loan@2, 40)",
+     "inputs": {
+      "term_loan@2": "240.0000"
+     },
+     "value": "40.0000"
+    },
+    "dividends@1": {
+     "formula": "max(0, net_income@1) \u00d7 0.30",
+     "inputs": {
+      "net_income@1": "273.9862"
+     },
+     "value": "82.1959"
+    },
+    "depreciation@3": {
+     "formula": "ppe@2 \u00d7 0.10",
+     "inputs": {
+      "ppe@2": "1366.8084"
+     },
+     "value": "136.6808"
+    },
+    "nwc_change@2": {
+     "formula": "net_working_capital@2 - net_working_capital@1",
+     "inputs": {
+      "net_working_capital@2": "438.9724",
+      "net_working_capital@1": "429.7769"
+     },
+     "value": "9.1955"
+    },
+    "net_working_capital@3": {
+     "formula": "accounts_receivable@3 + inventory@3 + other_current_assets@3 - accounts_payable@3 - other_current_liabilities@3",
+     "inputs": {
+      "accounts_receivable@3": "340.8586",
+      "inventory@3": "305.5407",
+      "other_current_assets@3": "30.0000",
+      "accounts_payable@3": "168.0474",
+      "other_current_liabilities@3": "60.0000"
+     },
+     "value": "448.3519"
+    },
+    "inventory@4": {
+     "formula": "cogs@4 \u00d7 60 / 365",
+     "inputs": {
+      "cogs@4": "1895.8799"
+     },
+     "value": "311.6515"
+    },
+    "accounts_payable@4": {
+     "formula": "cogs@4 \u00d7 33 / 365",
+     "inputs": {
+      "cogs@4": "1895.8799"
+     },
+     "value": "171.4083"
+    },
+    "cogs@5": {
+     "formula": "revenue@5 \u00d7 0.62",
+     "inputs": {
+      "revenue@5": "3119.0283"
+     },
+     "value": "1933.7975"
+    },
+    "sga@5": {
+     "formula": "revenue@5 \u00d7 0.21",
+     "inputs": {
+      "revenue@5": "3119.0283"
+     },
+     "value": "654.9959"
+    },
+    "capex@5": {
+     "formula": "revenue@5 \u00d7 0.08",
+     "inputs": {
+      "revenue@5": "3119.0283"
+     },
+     "value": "249.5223"
+    },
+    "accounts_receivable@5": {
+     "formula": "revenue@5 \u00d7 41.5 / 365",
+     "inputs": {
+      "revenue@5": "3119.0283"
+     },
+     "value": "354.6292"
+    },
+    "term_loan@3": {
+     "formula": "term_loan@2 - term_loan_repayment@3",
+     "inputs": {
+      "term_loan@2": "240.0000",
+      "term_loan_repayment@3": "40.0000"
+     },
+     "value": "200.0000"
+    },
+    "cash_before_revolver@1": {
+     "formula": "cash@0 + net_income@1 + depreciation@1 - nwc_change@1 - capex@1 - term_loan_repayment@1 - dividends@1",
+     "inputs": {
+      "cash@0": "278.0000",
+      "net_income@1": "273.9862",
+      "depreciation@1": "114.1000",
+      "nwc_change@1": "98.7769",
+      "capex@1": "230.5200",
+      "term_loan_repayment@1": "40.0000",
+      "dividends@1": "82.1959"
+     },
+     "value": "214.5935"
+    },
+    "retained_earnings@1": {
+     "formula": "retained_earnings@0 + net_income@1 - dividends@1",
+     "inputs": {
+      "retained_earnings@0": "1130.0000",
+      "net_income@1": "273.9862",
+      "dividends@1": "82.1959"
+     },
+     "value": "1321.7904"
+    },
+    "ppe@3": {
+     "formula": "ppe@2 + capex@3 - depreciation@3",
+     "inputs": {
+      "ppe@2": "1366.8084",
+      "capex@3": "239.8330",
+      "depreciation@3": "136.6808"
+     },
+     "value": "1469.9606"
+    },
+    "nwc_change@3": {
+     "formula": "net_working_capital@3 - net_working_capital@2",
+     "inputs": {
+      "net_working_capital@3": "448.3519",
+      "net_working_capital@2": "438.9724"
+     },
+     "value": "9.3794"
+    },
+    "net_working_capital@4": {
+     "formula": "accounts_receivable@4 + inventory@4 + other_current_assets@4 - accounts_payable@4 - other_current_liabilities@4",
+     "inputs": {
+      "accounts_receivable@4": "347.6757",
+      "inventory@4": "311.6515",
+      "other_current_assets@4": "30.0000",
+      "accounts_payable@4": "171.4083",
+      "other_current_liabilities@4": "60.0000"
+     },
+     "value": "457.9189"
+    },
+    "inventory@5": {
+     "formula": "cogs@5 \u00d7 60 / 365",
+     "inputs": {
+      "cogs@5": "1933.7975"
+     },
+     "value": "317.8845"
+    },
+    "accounts_payable@5": {
+     "formula": "cogs@5 \u00d7 33 / 365",
+     "inputs": {
+      "cogs@5": "1933.7975"
+     },
+     "value": "174.8365"
+    },
+    "term_loan_repayment@4": {
+     "formula": "min(term_loan@3, 40)",
+     "inputs": {
+      "term_loan@3": "200.0000"
+     },
+     "value": "40.0000"
+    },
+    "revolver_draw@1": {
+     "formula": "min(max(0, 150 - cash_before_revolver@1), max(0, 300 - revolver@0))",
+     "inputs": {
+      "cash_before_revolver@1": "214.5935",
+      "revolver@0": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@1": {
+     "formula": "min(revolver@0, max(0, cash_before_revolver@1 - 150))",
+     "inputs": {
+      "cash_before_revolver@1": "214.5935",
+      "revolver@0": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "depreciation@4": {
+     "formula": "ppe@3 \u00d7 0.10",
+     "inputs": {
+      "ppe@3": "1469.9606"
+     },
+     "value": "146.9961"
+    },
+    "nwc_change@4": {
+     "formula": "net_working_capital@4 - net_working_capital@3",
+     "inputs": {
+      "net_working_capital@4": "457.9189",
+      "net_working_capital@3": "448.3519"
+     },
+     "value": "9.5670"
+    },
+    "net_working_capital@5": {
+     "formula": "accounts_receivable@5 + inventory@5 + other_current_assets@5 - accounts_payable@5 - other_current_liabilities@5",
+     "inputs": {
+      "accounts_receivable@5": "354.6292",
+      "inventory@5": "317.8845",
+      "other_current_assets@5": "30.0000",
+      "accounts_payable@5": "174.8365",
+      "other_current_liabilities@5": "60.0000"
+     },
+     "value": "467.6773"
+    },
+    "term_loan@4": {
+     "formula": "term_loan@3 - term_loan_repayment@4",
+     "inputs": {
+      "term_loan@3": "200.0000",
+      "term_loan_repayment@4": "40.0000"
+     },
+     "value": "160.0000"
+    },
+    "unfunded_shortfall@1": {
+     "formula": "max(0, 150 - cash_before_revolver@1) - revolver_draw@1",
+     "inputs": {
+      "cash_before_revolver@1": "214.5935",
+      "revolver_draw@1": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@1": {
+     "formula": "revolver@0 + revolver_draw@1 - revolver_repayment@1",
+     "inputs": {
+      "revolver@0": "0.0000",
+      "revolver_draw@1": "0.0000",
+      "revolver_repayment@1": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@1": {
+     "formula": "cash_before_revolver@1 + revolver_draw@1 - revolver_repayment@1",
+     "inputs": {
+      "cash_before_revolver@1": "214.5935",
+      "revolver_draw@1": "0.0000",
+      "revolver_repayment@1": "0.0000"
+     },
+     "value": "214.5935"
+    },
+    "ppe@4": {
+     "formula": "ppe@3 + capex@4 - depreciation@4",
+     "inputs": {
+      "ppe@3": "1469.9606",
+      "capex@4": "244.6297",
+      "depreciation@4": "146.9961"
+     },
+     "value": "1567.5942"
+    },
+    "nwc_change@5": {
+     "formula": "net_working_capital@5 - net_working_capital@4",
+     "inputs": {
+      "net_working_capital@5": "467.6773",
+      "net_working_capital@4": "457.9189"
+     },
+     "value": "9.7584"
+    },
+    "term_loan_repayment@5": {
+     "formula": "min(term_loan@4, 40)",
+     "inputs": {
+      "term_loan@4": "160.0000"
+     },
+     "value": "40.0000"
+    },
+    "interest_expense@2": {
+     "formula": "term_loan@1 \u00d7 0.05 + revolver@1 \u00d7 0.07 - cash@1 \u00d7 0.02",
+     "inputs": {
+      "term_loan@1": "280.0000",
+      "revolver@1": "0.0000",
+      "cash@1": "214.5935"
+     },
+     "value": "9.7081"
+    },
+    "depreciation@5": {
+     "formula": "ppe@4 \u00d7 0.10",
+     "inputs": {
+      "ppe@4": "1567.5942"
+     },
+     "value": "156.7594"
+    },
+    "term_loan@5": {
+     "formula": "term_loan@4 - term_loan_repayment@5",
+     "inputs": {
+      "term_loan@4": "160.0000",
+      "term_loan_repayment@5": "40.0000"
+     },
+     "value": "120.0000"
+    },
+    "pre_tax_income@2": {
+     "formula": "revenue@2 - cogs@2 - sga@2 - depreciation@2 - interest_expense@2",
+     "inputs": {
+      "revenue@2": "2939.1300",
+      "cogs@2": "1822.2606",
+      "sga@2": "617.2173",
+      "depreciation@2": "125.7420",
+      "interest_expense@2": "9.7081"
+     },
+     "value": "364.2020"
+    },
+    "ppe@5": {
+     "formula": "ppe@4 + capex@5 - depreciation@5",
+     "inputs": {
+      "ppe@4": "1567.5942",
+      "capex@5": "249.5223",
+      "depreciation@5": "156.7594"
+     },
+     "value": "1660.3570"
+    },
+    "tax_expense@2": {
+     "formula": "max(0, pre_tax_income@2) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@2": "364.2020"
+     },
+     "value": "91.0505"
+    },
+    "net_income@2": {
+     "formula": "pre_tax_income@2 - tax_expense@2",
+     "inputs": {
+      "pre_tax_income@2": "364.2020",
+      "tax_expense@2": "91.0505"
+     },
+     "value": "273.1515"
+    },
+    "dividends@2": {
+     "formula": "max(0, net_income@2) \u00d7 0.30",
+     "inputs": {
+      "net_income@2": "273.1515"
+     },
+     "value": "81.9454"
+    },
+    "cash_before_revolver@2": {
+     "formula": "cash@1 + net_income@2 + depreciation@2 - nwc_change@2 - capex@2 - term_loan_repayment@2 - dividends@2",
+     "inputs": {
+      "cash@1": "214.5935",
+      "net_income@2": "273.1515",
+      "depreciation@2": "125.7420",
+      "nwc_change@2": "9.1955",
+      "capex@2": "235.1304",
+      "term_loan_repayment@2": "40.0000",
+      "dividends@2": "81.9454"
+     },
+     "value": "247.2156"
+    },
+    "retained_earnings@2": {
+     "formula": "retained_earnings@1 + net_income@2 - dividends@2",
+     "inputs": {
+      "retained_earnings@1": "1321.7904",
+      "net_income@2": "273.1515",
+      "dividends@2": "81.9454"
+     },
+     "value": "1512.9964"
+    },
+    "revolver_draw@2": {
+     "formula": "min(max(0, 150 - cash_before_revolver@2), max(0, 300 - revolver@1))",
+     "inputs": {
+      "cash_before_revolver@2": "247.2156",
+      "revolver@1": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@2": {
+     "formula": "min(revolver@1, max(0, cash_before_revolver@2 - 150))",
+     "inputs": {
+      "cash_before_revolver@2": "247.2156",
+      "revolver@1": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@2": {
+     "formula": "max(0, 150 - cash_before_revolver@2) - revolver_draw@2",
+     "inputs": {
+      "cash_before_revolver@2": "247.2156",
+      "revolver_draw@2": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@2": {
+     "formula": "revolver@1 + revolver_draw@2 - revolver_repayment@2",
+     "inputs": {
+      "revolver@1": "0.0000",
+      "revolver_draw@2": "0.0000",
+      "revolver_repayment@2": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@2": {
+     "formula": "cash_before_revolver@2 + revolver_draw@2 - revolver_repayment@2",
+     "inputs": {
+      "cash_before_revolver@2": "247.2156",
+      "revolver_draw@2": "0.0000",
+      "revolver_repayment@2": "0.0000"
+     },
+     "value": "247.2156"
+    },
+    "interest_expense@3": {
+     "formula": "term_loan@2 \u00d7 0.05 + revolver@2 \u00d7 0.07 - cash@2 \u00d7 0.02",
+     "inputs": {
+      "term_loan@2": "240.0000",
+      "revolver@2": "0.0000",
+      "cash@2": "247.2156"
+     },
+     "value": "7.0557"
+    },
+    "pre_tax_income@3": {
+     "formula": "revenue@3 - cogs@3 - sga@3 - depreciation@3 - interest_expense@3",
+     "inputs": {
+      "revenue@3": "2997.9126",
+      "cogs@3": "1858.7058",
+      "sga@3": "629.5616",
+      "depreciation@3": "136.6808",
+      "interest_expense@3": "7.0557"
+     },
+     "value": "365.9086"
+    },
+    "tax_expense@3": {
+     "formula": "max(0, pre_tax_income@3) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@3": "365.9086"
+     },
+     "value": "91.4772"
+    },
+    "net_income@3": {
+     "formula": "pre_tax_income@3 - tax_expense@3",
+     "inputs": {
+      "pre_tax_income@3": "365.9086",
+      "tax_expense@3": "91.4772"
+     },
+     "value": "274.4315"
+    },
+    "dividends@3": {
+     "formula": "max(0, net_income@3) \u00d7 0.30",
+     "inputs": {
+      "net_income@3": "274.4315"
+     },
+     "value": "82.3294"
+    },
+    "cash_before_revolver@3": {
+     "formula": "cash@2 + net_income@3 + depreciation@3 - nwc_change@3 - capex@3 - term_loan_repayment@3 - dividends@3",
+     "inputs": {
+      "cash@2": "247.2156",
+      "net_income@3": "274.4315",
+      "depreciation@3": "136.6808",
+      "nwc_change@3": "9.3794",
+      "capex@3": "239.8330",
+      "term_loan_repayment@3": "40.0000",
+      "dividends@3": "82.3294"
+     },
+     "value": "286.7860"
+    },
+    "retained_earnings@3": {
+     "formula": "retained_earnings@2 + net_income@3 - dividends@3",
+     "inputs": {
+      "retained_earnings@2": "1512.9964",
+      "net_income@3": "274.4315",
+      "dividends@3": "82.3294"
+     },
+     "value": "1705.0984"
+    },
+    "revolver_draw@3": {
+     "formula": "min(max(0, 150 - cash_before_revolver@3), max(0, 300 - revolver@2))",
+     "inputs": {
+      "cash_before_revolver@3": "286.7860",
+      "revolver@2": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@3": {
+     "formula": "min(revolver@2, max(0, cash_before_revolver@3 - 150))",
+     "inputs": {
+      "cash_before_revolver@3": "286.7860",
+      "revolver@2": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@3": {
+     "formula": "max(0, 150 - cash_before_revolver@3) - revolver_draw@3",
+     "inputs": {
+      "cash_before_revolver@3": "286.7860",
+      "revolver_draw@3": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@3": {
+     "formula": "revolver@2 + revolver_draw@3 - revolver_repayment@3",
+     "inputs": {
+      "revolver@2": "0.0000",
+      "revolver_draw@3": "0.0000",
+      "revolver_repayment@3": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@3": {
+     "formula": "cash_before_revolver@3 + revolver_draw@3 - revolver_repayment@3",
+     "inputs": {
+      "cash_before_revolver@3": "286.7860",
+      "revolver_draw@3": "0.0000",
+      "revolver_repayment@3": "0.0000"
+     },
+     "value": "286.7860"
+    },
+    "interest_expense@4": {
+     "formula": "term_loan@3 \u00d7 0.05 + revolver@3 \u00d7 0.07 - cash@3 \u00d7 0.02",
+     "inputs": {
+      "term_loan@3": "200.0000",
+      "revolver@3": "0.0000",
+      "cash@3": "286.7860"
+     },
+     "value": "4.2643"
+    },
+    "pre_tax_income@4": {
+     "formula": "revenue@4 - cogs@4 - sga@4 - depreciation@4 - interest_expense@4",
+     "inputs": {
+      "revenue@4": "3057.8709",
+      "cogs@4": "1895.8799",
+      "sga@4": "642.1529",
+      "depreciation@4": "146.9961",
+      "interest_expense@4": "4.2643"
+     },
+     "value": "368.5777"
+    },
+    "tax_expense@4": {
+     "formula": "max(0, pre_tax_income@4) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@4": "368.5777"
+     },
+     "value": "92.1444"
+    },
+    "net_income@4": {
+     "formula": "pre_tax_income@4 - tax_expense@4",
+     "inputs": {
+      "pre_tax_income@4": "368.5777",
+      "tax_expense@4": "92.1444"
+     },
+     "value": "276.4333"
+    },
+    "dividends@4": {
+     "formula": "max(0, net_income@4) \u00d7 0.30",
+     "inputs": {
+      "net_income@4": "276.4333"
+     },
+     "value": "82.9300"
+    },
+    "cash_before_revolver@4": {
+     "formula": "cash@3 + net_income@4 + depreciation@4 - nwc_change@4 - capex@4 - term_loan_repayment@4 - dividends@4",
+     "inputs": {
+      "cash@3": "286.7860",
+      "net_income@4": "276.4333",
+      "depreciation@4": "146.9961",
+      "nwc_change@4": "9.5670",
+      "capex@4": "244.6297",
+      "term_loan_repayment@4": "40.0000",
+      "dividends@4": "82.9300"
+     },
+     "value": "333.0886"
+    },
+    "retained_earnings@4": {
+     "formula": "retained_earnings@3 + net_income@4 - dividends@4",
+     "inputs": {
+      "retained_earnings@3": "1705.0984",
+      "net_income@4": "276.4333",
+      "dividends@4": "82.9300"
+     },
+     "value": "1898.6017"
+    },
+    "revolver_draw@4": {
+     "formula": "min(max(0, 150 - cash_before_revolver@4), max(0, 300 - revolver@3))",
+     "inputs": {
+      "cash_before_revolver@4": "333.0886",
+      "revolver@3": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@4": {
+     "formula": "min(revolver@3, max(0, cash_before_revolver@4 - 150))",
+     "inputs": {
+      "cash_before_revolver@4": "333.0886",
+      "revolver@3": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@4": {
+     "formula": "max(0, 150 - cash_before_revolver@4) - revolver_draw@4",
+     "inputs": {
+      "cash_before_revolver@4": "333.0886",
+      "revolver_draw@4": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@4": {
+     "formula": "revolver@3 + revolver_draw@4 - revolver_repayment@4",
+     "inputs": {
+      "revolver@3": "0.0000",
+      "revolver_draw@4": "0.0000",
+      "revolver_repayment@4": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@4": {
+     "formula": "cash_before_revolver@4 + revolver_draw@4 - revolver_repayment@4",
+     "inputs": {
+      "cash_before_revolver@4": "333.0886",
+      "revolver_draw@4": "0.0000",
+      "revolver_repayment@4": "0.0000"
+     },
+     "value": "333.0886"
+    },
+    "interest_expense@5": {
+     "formula": "term_loan@4 \u00d7 0.05 + revolver@4 \u00d7 0.07 - cash@4 \u00d7 0.02",
+     "inputs": {
+      "term_loan@4": "160.0000",
+      "revolver@4": "0.0000",
+      "cash@4": "333.0886"
+     },
+     "value": "1.3382"
+    },
+    "pre_tax_income@5": {
+     "formula": "revenue@5 - cogs@5 - sga@5 - depreciation@5 - interest_expense@5",
+     "inputs": {
+      "revenue@5": "3119.0283",
+      "cogs@5": "1933.7975",
+      "sga@5": "654.9959",
+      "depreciation@5": "156.7594",
+      "interest_expense@5": "1.3382"
+     },
+     "value": "372.1372"
+    },
+    "tax_expense@5": {
+     "formula": "max(0, pre_tax_income@5) \u00d7 0.25",
+     "inputs": {
+      "pre_tax_income@5": "372.1372"
+     },
+     "value": "93.0343"
+    },
+    "net_income@5": {
+     "formula": "pre_tax_income@5 - tax_expense@5",
+     "inputs": {
+      "pre_tax_income@5": "372.1372",
+      "tax_expense@5": "93.0343"
+     },
+     "value": "279.1029"
+    },
+    "dividends@5": {
+     "formula": "max(0, net_income@5) \u00d7 0.30",
+     "inputs": {
+      "net_income@5": "279.1029"
+     },
+     "value": "83.7309"
+    },
+    "cash_before_revolver@5": {
+     "formula": "cash@4 + net_income@5 + depreciation@5 - nwc_change@5 - capex@5 - term_loan_repayment@5 - dividends@5",
+     "inputs": {
+      "cash@4": "333.0886",
+      "net_income@5": "279.1029",
+      "depreciation@5": "156.7594",
+      "nwc_change@5": "9.7584",
+      "capex@5": "249.5223",
+      "term_loan_repayment@5": "40.0000",
+      "dividends@5": "83.7309"
+     },
+     "value": "385.9394"
+    },
+    "retained_earnings@5": {
+     "formula": "retained_earnings@4 + net_income@5 - dividends@5",
+     "inputs": {
+      "retained_earnings@4": "1898.6017",
+      "net_income@5": "279.1029",
+      "dividends@5": "83.7309"
+     },
+     "value": "2093.9737"
+    },
+    "revolver_draw@5": {
+     "formula": "min(max(0, 150 - cash_before_revolver@5), max(0, 300 - revolver@4))",
+     "inputs": {
+      "cash_before_revolver@5": "385.9394",
+      "revolver@4": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver_repayment@5": {
+     "formula": "min(revolver@4, max(0, cash_before_revolver@5 - 150))",
+     "inputs": {
+      "cash_before_revolver@5": "385.9394",
+      "revolver@4": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "unfunded_shortfall@5": {
+     "formula": "max(0, 150 - cash_before_revolver@5) - revolver_draw@5",
+     "inputs": {
+      "cash_before_revolver@5": "385.9394",
+      "revolver_draw@5": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "revolver@5": {
+     "formula": "revolver@4 + revolver_draw@5 - revolver_repayment@5",
+     "inputs": {
+      "revolver@4": "0.0000",
+      "revolver_draw@5": "0.0000",
+      "revolver_repayment@5": "0.0000"
+     },
+     "value": "0.0000"
+    },
+    "cash@5": {
+     "formula": "cash_before_revolver@5 + revolver_draw@5 - revolver_repayment@5",
+     "inputs": {
+      "cash_before_revolver@5": "385.9394",
+      "revolver_draw@5": "0.0000",
+      "revolver_repayment@5": "0.0000"
+     },
+     "value": "385.9394"
+    }
+   }
+  }
+ }
+}

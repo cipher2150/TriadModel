@@ -194,7 +194,11 @@ def test_production_enables_hsts_and_hides_api_docs() -> None:
     from app.config import Settings
     from app.main import create_app
 
-    with TestClient(create_app(Settings(app_env="production", database_url="sqlite://"))) as c:
+    with TestClient(
+        create_app(
+            Settings(app_env="production", database_url="sqlite://", static_dir="no-such-dir")
+        )
+    ) as c:
         assert "strict-transport-security" in c.get("/health/live").headers
         assert c.get("/docs").status_code == 404
         assert c.get("/openapi.json").status_code == 404
