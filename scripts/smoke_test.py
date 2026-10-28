@@ -21,7 +21,7 @@ def call(
     base: str, method: str, path: str, body: Any = None, headers: dict[str, str] | None = None
 ) -> tuple[int, dict[str, str], bytes]:
     data = json.dumps(body).encode() if body is not None else None
-    request = urllib.request.Request(base + path, data=data, method=method)
+    request = urllib.request.Request(base + path, data=data, method=method)  # noqa: S310
     request.add_header("content-type", "application/json")
     for key, value in (headers or {}).items():
         request.add_header(key, value)
@@ -39,12 +39,14 @@ def check(condition: bool, description: str) -> None:
 
 
 def main(base: str) -> None:
+    if not base.startswith(("http://", "https://")):
+        sys.exit("The URL must start with http:// or https://")
     base = base.rstrip("/")
     status, _, _ = call(base, "GET", "/health/ready")
     check(status == 200, "readiness endpoint reports database reachable")
 
     status, headers, body = call(base, "GET", "/")
-    check(status == 200 and b"<div id=\"root\">" in body, "frontend is served")
+    check(status == 200 and b'<div id="root">' in body, "frontend is served")
     check(headers.get("x-content-type-options") == "nosniff", "security headers present")
 
     status, _, body = call(base, "GET", "/api/demo")
@@ -53,7 +55,10 @@ def main(base: str) -> None:
 
     status, _, body = call(base, "POST", "/api/calculate", demo)
     result = json.loads(body)
-    check(status == 200 and result["scenarios"]["base"]["flags"] == [], "demo calculates with no flags")
+    check(
+        status == 200 and result["scenarios"]["base"]["flags"] == [],
+        "demo calculates with no flags",
+    )
 
     status, _, body = call(base, "POST", "/api/models", demo)
     created = json.loads(body)

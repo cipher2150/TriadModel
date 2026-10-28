@@ -16,22 +16,22 @@ Users: finance students, analysts and small-business owners who have 2–5 years
 
 | ID | Requirement | Status |
 |----|-------------|--------|
-| F1 | Canonical historical schema for IS, BS, CF with import validation (reject unbalanced BS, missing lines, non-finite numbers, with line-specific errors) | [~] JSON import validation via API schemas verified; CSV import not implemented |
-| F2 | Revenue forecast (growth rate per year) | [x] engine only — engine tests: hand-calculated year 1 |
-| F3 | Operating expense forecast (COGS % revenue, SG&A % revenue, D&A from PP&E) | [x] engine only — same |
-| F4 | Working capital forecast (DSO, DIO, DPO → AR, inventory, AP; other items held or % revenue) | [x] engine only — same |
-| F5 | PP&E roll-forward (capex % revenue, depreciation) | [x] engine only — same |
-| F6 | Debt schedule: term loan with scheduled amortization, revolver that draws to hold minimum cash and repays from surplus up to a limit, interest on opening balances | [x] engine only — unit: draw/repay/cap/term-loan cap |
-| F7 | Tax expense (rate on positive pre-tax income; losses are not carried forward in MVP — documented limitation) | [x] engine only — unit: loss year pays no tax |
-| F8 | Equity roll-forward (retained earnings, dividends as payout ratio) | [x] engine only — unit: RE roll-forward |
-| F9 | Cash flow statement derived from IS and BS movements (indirect method) and tied to BS cash | [x] engine only — unit + property: CF ties to ledger cash |
-| F10 | Three scenarios (Base, Upside, Downside), each a complete assumption set; switching or editing recalculates all statements | [~] backend only — scenarios calculate together via API; UI pending |
-| F11 | Integrity checks: balance sheet balances; CF ending cash = BS cash; NI IS = NI CF; RE, PP&E and debt roll-forwards tie out; each reported per period with tolerance | [x] engine only — fault-injection tests per flag + property tests |
-| F12 | Liquidity flags: cash below minimum, revolver limit exceeded (unfunded shortfall), negative equity | [x] engine only — unit: shortfall/negative cash/negative equity |
-| F13 | Dependency graph: each forecast line declares its inputs; calculation order is derived, cycles are detected and reported | [x] engine only — graph tests: order, cycle, undefined/duplicate |
-| F14 | Trace view: for any forecast cell, show the formula and the inputs it used | [x] engine only — trace unit test (API/UI view pending) |
-| F15 | Scenario comparison view (key outputs across scenarios) | [ ] |
-| F16 | Export/import model as JSON; export statements as CSV | [~] JSON/CSV export and JSON re-import verified via API; no UI yet |
+| F1 | Canonical historical schema for IS, BS, CF with import validation (reject unbalanced BS, missing lines, non-finite numbers, with line-specific errors) | [~] JSON import validated by the API schemas and E2E-tested (unbalanced history rejected with the year); CSV import not implemented |
+| F2 | Revenue forecast (growth rate per year) | [x] engine tests: hand-calculated year 1 |
+| F3 | Operating expense forecast (COGS % revenue, SG&A % revenue, D&A from PP&E) | [x] same |
+| F4 | Working capital forecast (DSO, DIO, DPO → AR, inventory, AP; other items held or % revenue) | [x] same |
+| F5 | PP&E roll-forward (capex % revenue, depreciation) | [x] same |
+| F6 | Debt schedule: term loan with scheduled amortization, revolver that draws to hold minimum cash and repays from surplus up to a limit, interest on opening balances | [x] unit: draw/repay/cap/term-loan cap |
+| F7 | Tax expense (rate on positive pre-tax income; losses are not carried forward in MVP — documented limitation) | [x] unit: loss year pays no tax |
+| F8 | Equity roll-forward (retained earnings, dividends as payout ratio) | [x] unit: RE roll-forward |
+| F9 | Cash flow statement derived from IS and BS movements (indirect method) and tied to BS cash | [x] unit + property: CF ties to ledger cash |
+| F10 | Three scenarios (Base, Upside, Downside), each a complete assumption set; switching or editing recalculates all statements | [x] E2E: editing one assumption changes IS, BS and CF; scenarios switch and compare in the UI |
+| F11 | Integrity checks: balance sheet balances; CF ending cash = BS cash; NI IS = NI CF; RE, PP&E and debt roll-forwards tie out; each reported per period with tolerance | [x] fault-injection tests per flag + property tests |
+| F12 | Liquidity flags: cash below minimum, revolver limit exceeded (unfunded shortfall), negative equity | [x] unit: shortfall/negative cash/negative equity |
+| F13 | Dependency graph: each forecast line declares its inputs; calculation order is derived, cycles are detected and reported | [x] graph tests: order, cycle, undefined/duplicate |
+| F14 | Trace view: for any forecast cell, show the formula and the inputs it used | [x] unit test plus E2E: click a forecast figure to see formula and inputs |
+| F15 | Scenario comparison view (key outputs across scenarios) | [x] Vitest and E2E: comparison table for all three scenarios |
+| F16 | Export/import model as JSON; export statements as CSV | [~] JSON/CSV export and JSON import verified (API and E2E); CSV import not implemented |
 | B1 | REST API: stateless `/api/calculate`; create/read/update/delete saved models; health endpoints; consistent error envelope | [x] API tests (calculate, demo, models CRUD, export, error envelope) |
 | B2 | Saved models persisted in Postgres with migrations; optimistic concurrency (409 on stale version) | [x] Alembic migration tested up/down on SQLite and Postgres; 8-thread race test on Postgres 14 |
 | B3 | Capability-token access: model UUID = read, write token = write/delete; no list endpoint | [x] token/403/404/no-list tests |
@@ -40,13 +40,13 @@ Users: finance students, analysts and small-business owners who have 2–5 years
 
 | ID | Requirement | Status |
 |----|-------------|--------|
-| N1 | `calculate` for a 5-year scenario completes in < 50 ms server-side (**measured**, not assumed); UI debounces edits | [~] engine measured: median 0.43 ms for 5 years (dev laptop); API latency not yet measured |
+| N1 | `calculate` for a 5-year scenario completes in < 50 ms server-side (**measured**, not assumed); UI debounces edits | [~] engine: median 0.43 ms for a 5-year scenario over 200 runs on a developer laptop; end-to-end API latency not measured |
 | N2 | Engine is pure Python (stdlib only), `Decimal`-based, deterministic; import-boundary test enforces it | [x] test_architecture.py |
-| N3 | All imported/edited input validated at the boundary; clear messages | [ ] |
-| N4 | Accessible UI (labelled inputs, keyboard operable, flags not colour-only); axe checks in E2E | [ ] |
-| N5 | No secrets in repo; config via validated env vars; security headers, request-size cap, rate limiting; tokens never logged | [~] headers, size cap, rate limit, no token in logs/responses verified; secret scan not yet configured |
-| N6 | Reproducible setup from a clean checkout; CI runs format, lint, typecheck, tests, build | [ ] |
-| N7 | Dockerised app deployed on Render (service + Postgres) and smoke-tested | [ ] |
+| N3 | All imported/edited input validated at the boundary; clear messages | [x] schema, API and E2E tests: bad types, ranges, unknown fields, NaN, oversize, malformed JSON |
+| N4 | Accessible UI (labelled inputs, keyboard operable, flags not colour-only); axe checks in E2E | [~] axe scan (serious/critical) passes in E2E; labelled inputs, flags carry text; no manual screen-reader or keyboard audit |
+| N5 | No secrets in repo; config via validated env vars; security headers, request-size cap, rate limiting; tokens never logged | [~] headers, size cap, rate limit, hashed tokens, non-root container verified; no CI secret scanning (enable GitHub secret scanning) |
+| N6 | Reproducible setup from a clean checkout; CI runs format, lint, typecheck, tests, build | [~] reproduced from a clean export (install, build, migrate, run, all checks). CI workflow written and YAML-validated but not yet run on GitHub |
+| N7 | Dockerised app deployed on Render (service + Postgres) and smoke-tested | [!] image built and smoke-tested locally against Postgres 16; not deployed to Render (needs owner's Render account; see docs/DEPLOYMENT.md) |
 
 ## Assumptions (nonessential ambiguities, resolved conservatively)
 
