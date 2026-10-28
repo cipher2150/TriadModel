@@ -29,3 +29,28 @@ def test_engine_imports_only_standard_library_and_itself() -> None:
                 continue
             violations.append(f"{path.relative_to(ENGINE_DIR)} imports {module}")
     assert violations == []
+
+
+APP_DIR = ENGINE_DIR.parent
+
+
+def internal_imports(package: str) -> set[str]:
+    modules: set[str] = set()
+    for path in (APP_DIR / package).rglob("*.py"):
+        modules.update(m for m in imported_modules(path) if m == "app" or m.startswith("app."))
+    return modules
+
+
+def test_lower_layers_never_import_the_web_layer() -> None:
+    """services, db and schemas must not depend on app.api (dependency rule in architecture.md)."""
+    for package in ("services", "db", "schemas"):
+        offenders = {
+            m for m in internal_imports(package) if m == "app.api" or m.startswith("app.api.")
+        }
+        assert offenders == set(), f"{package} imports the web layer: {offenders}"
+
+
+def test_engine_does_not_depend_on_other_application_layers() -> None:
+    other_layers = ("app.api", "app.services", "app.db", "app.schemas", "app.config", "app.errors")
+    offenders = {m for m in internal_imports("engine") if m.startswith(other_layers)}
+    assert offenders == set()

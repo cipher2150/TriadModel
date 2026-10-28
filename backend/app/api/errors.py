@@ -7,16 +7,9 @@ from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from app.engine.types import InvalidInputError
+from app.errors import ApiError
 
 logger = logging.getLogger(__name__)
-
-
-class ApiError(Exception):
-    def __init__(self, status_code: int, code: str, message: str) -> None:
-        super().__init__(message)
-        self.status_code = status_code
-        self.code = code
-        self.message = message
 
 
 def error_response(

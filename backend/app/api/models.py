@@ -7,8 +7,8 @@ from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy.orm import Session
 
-from app.api.errors import ApiError
 from app.engine.scenarios import SCENARIO_NAMES
+from app.errors import ApiError
 from app.schemas.model import ModelPayload
 from app.schemas.result import CreatedModelOut, SavedModelOut
 from app.services import model_service
